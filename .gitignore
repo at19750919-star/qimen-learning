@@ -1,0 +1,6 @@
+﻿assets/*.png
+verification/
+deploy/
+__pycache__/
+*.pyc
+.DS_Store

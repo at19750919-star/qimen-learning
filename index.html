@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="時家轉盤奇門・拆補法的零基礎學習頁：五行、九宮、八門、九星、八神與讀盤步驟。">
+  <title>奇門入門研習冊</title>
+  <style>
+    :root {
+      --paper:#f4efe4; --paper-2:#ebe2d2; --ink:#201f1b; --muted:#716b60;
+      --line:#c8bda9; --red:#9d2821; --red-dark:#711b17; --green:#49664d;
+      --gold:#9b7a3d; --shadow:0 18px 50px rgba(56,42,24,.11);
+      --serif:"Noto Serif TC","Songti TC","PMingLiU",serif;
+      --sans:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.75}
+    body::before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.24;background-image:radial-gradient(circle at 20% 10%,rgba(157,40,33,.06),transparent 24%),linear-gradient(90deg,rgba(75,57,32,.025) 1px,transparent 1px);background-size:auto,28px 28px}
+    a{color:inherit}
+    button,input{font:inherit}
+    .skip{position:absolute;left:-9999px}.skip:focus{left:16px;top:16px;z-index:20;background:var(--ink);color:var(--paper);padding:8px 14px}
+    .topbar{position:sticky;top:0;z-index:10;background:rgba(244,239,228,.92);backdrop-filter:blur(14px);border-bottom:1px solid rgba(113,107,96,.22)}
+    .nav{max-width:1180px;margin:auto;padding:12px 24px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{font-family:var(--serif);font-weight:700;letter-spacing:.14em;white-space:nowrap}
+    .nav-links{display:flex;gap:20px;overflow:auto;font-size:.9rem;color:var(--muted);scrollbar-width:none}.nav-links a{text-decoration:none;white-space:nowrap}.nav-links a:hover{color:var(--red)}
+    .hero{min-height:78vh;display:grid;align-items:center;border-bottom:1px solid var(--line);position:relative;overflow:hidden}
+    .hero-inner{width:min(1180px,calc(100% - 48px));margin:auto;padding:80px 0;display:grid;grid-template-columns:1.1fr .9fr;gap:64px;align-items:center}
+    .eyebrow{color:var(--red);letter-spacing:.22em;font-size:.82rem;font-weight:700;text-transform:uppercase}
+    h1,h2,h3{font-family:var(--serif);line-height:1.25}
+    h1{font-size:clamp(3rem,7vw,6.8rem);font-weight:600;letter-spacing:.08em;margin:.18em 0}.hero p{font-size:1.1rem;color:var(--muted);max-width:39rem}
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:11px 18px;border:1px solid var(--ink);text-decoration:none;background:transparent;color:var(--ink);cursor:pointer}
+    .btn.primary{background:var(--red);border-color:var(--red);color:#fff}.btn:hover{transform:translateY(-1px)}
+    .hero-mark{aspect-ratio:1;position:relative;display:grid;place-items:center}
+    .hero-mark::before,.hero-mark::after{content:"";position:absolute;border:1px solid var(--line);transform:rotate(45deg)}
+    .hero-mark::before{inset:12%}.hero-mark::after{inset:25%}
+    .hero-number{font-family:var(--serif);font-size:clamp(7rem,18vw,13rem);color:var(--red);line-height:1}.hero-caption{position:absolute;bottom:17%;font-family:var(--serif);letter-spacing:.28em}
+    main{position:relative}
+    .section{width:min(1180px,calc(100% - 48px));margin:auto;padding:96px 0;border-bottom:1px solid var(--line)}
+    .section-head{display:grid;grid-template-columns:180px 1fr;gap:28px;margin-bottom:44px}.section-no{font-family:var(--serif);font-size:3.2rem;color:var(--red)}.section-title h2{font-size:clamp(2rem,4vw,3.6rem);margin:0 0 8px}.section-title p{margin:0;color:var(--muted);max-width:700px}
+    .path{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+    .path-item{padding:26px 22px;min-height:180px}.path-item+.path-item{border-left:1px solid var(--line)}.path-item strong{font-family:var(--serif);font-size:1.5rem}.path-item p{color:var(--muted);font-size:.92rem;margin:.8em 0 0}.path-tag{color:var(--red);font-size:.75rem;letter-spacing:.12em}
+    .element-layout{display:grid;grid-template-columns:minmax(300px,.85fr) 1.15fr;gap:56px;align-items:center}.element-art{width:100%;display:block}.cycles{display:grid;gap:28px}.cycle{padding-left:20px;border-left:3px solid var(--red)}.cycle.control{border-color:var(--ink)}.cycle h3{margin:0 0 8px;font-size:1.35rem}.cycle-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.node{font-family:var(--serif);font-size:1.15rem;padding:4px 9px}.arrow{color:var(--red)}
+    .stems{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:36px}.stem{background:var(--paper);padding:18px;text-align:center}.stem b{display:block;font-family:var(--serif);font-size:2rem}.stem span{color:var(--muted);font-size:.85rem}
+    .palace-wrap{display:grid;grid-template-columns:minmax(300px,1fr) minmax(260px,.65fr);gap:42px;align-items:start;min-width:0}.palace-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border:1px solid var(--ink);box-shadow:var(--shadow);width:100%;min-width:0}
+    .palace{aspect-ratio:1;min-width:0;overflow:hidden;border:0;background:rgba(255,255,255,.2);color:var(--ink);padding:15px;cursor:pointer;display:flex;flex-direction:column;align-items:flex-start;justify-content:space-between;text-align:left}.palace:nth-child(-n+6){border-bottom:1px solid var(--ink)}.palace:not(:nth-child(3n)){border-right:1px solid var(--ink)}.palace:hover,.palace[aria-pressed="true"]{background:var(--red);color:#fff}.palace strong{font-family:var(--serif);font-size:clamp(1.2rem,3vw,2rem)}.palace small{opacity:.72}.palace span,.palace small{max-width:100%;overflow-wrap:anywhere}.palace.center{align-items:center;justify-content:center;background:var(--ink);color:var(--paper)}
+    .detail{position:sticky;top:82px;border-top:4px solid var(--red);padding-top:22px}.detail h3{font-size:2.2rem;margin:0}.detail-meta{color:var(--red);letter-spacing:.1em}.detail p{color:var(--muted)}.memory-line{margin-top:18px;padding:16px;background:var(--paper-2);font-family:var(--serif)}
+    .gates-art{margin:0;overflow:hidden;border:1px solid var(--line);background:#eee2cf}.gates-art img{width:100%;display:block}.gate-labels{display:grid;grid-template-columns:repeat(8,1fr);border:1px solid var(--line);border-top:0}.gate-label{padding:12px 4px;text-align:center;font-family:var(--serif);font-size:1.1rem}.gate-label+.gate-label{border-left:1px solid var(--line)}.gate-label b{display:block}.gate-label span{font-family:var(--sans);font-size:.75rem;color:var(--muted)}
+    .symbol-tabs{display:flex;gap:8px;margin:42px 0 24px}.tab{padding:9px 16px;border:1px solid var(--line);background:transparent;cursor:pointer}.tab[aria-selected="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+    .symbol-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}.symbol-card{min-height:152px;background:var(--paper);padding:22px;position:relative}.symbol-card b{display:block;font-family:var(--serif);font-size:1.45rem;margin-bottom:10px}.symbol-card p{margin:0;color:var(--muted);font-size:.9rem}.symbol-card .nature{position:absolute;right:14px;top:14px;color:var(--red);font-size:.75rem}.panel[hidden]{display:none}
+    .method{display:grid;grid-template-columns:repeat(5,1fr);counter-reset:step}.method-step{padding:24px 20px;border-top:1px solid var(--ink);position:relative}.method-step::before{counter-increment:step;content:"0" counter(step);display:block;color:var(--red);font-family:var(--serif);font-size:1.5rem;margin-bottom:35px}.method-step h3{font-size:1.25rem;margin:0 0 8px}.method-step p{color:var(--muted);font-size:.88rem;margin:0}.method-step+.method-step{border-left:1px solid var(--line)}
+    .practice{display:grid;grid-template-columns:.75fr 1.25fr;gap:50px}.checklist{display:grid;gap:1px;background:var(--line);border:1px solid var(--line)}.check-row{background:var(--paper);padding:16px;display:flex;gap:12px;align-items:flex-start;cursor:pointer}.check-row input{accent-color:var(--red);width:18px;height:18px;margin-top:4px}.progress-track{height:6px;background:var(--paper-2);margin:18px 0}.progress-fill{height:100%;width:0;background:var(--red);transition:width .25s}.quiz{background:var(--ink);color:var(--paper);padding:34px;min-height:330px;display:flex;flex-direction:column}.quiz-label{color:#cdbfa9;font-size:.8rem;letter-spacing:.14em}.quiz-prompt{font-family:var(--serif);font-size:clamp(2rem,5vw,4rem);margin:auto 0;text-align:center}.quiz-answer{min-height:78px;color:#ded3c1;text-align:center}.quiz-actions{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}.quiz .btn{border-color:#d8cbb7;color:var(--paper)}.quiz .btn.primary{border-color:var(--red)}
+    .note{margin-top:42px;padding:22px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}.sources{display:flex;gap:16px;flex-wrap:wrap}.sources a{text-underline-offset:4px}
+    footer{width:min(1180px,calc(100% - 48px));margin:auto;padding:40px 0 60px;display:flex;justify-content:space-between;gap:20px;color:var(--muted);font-size:.85rem}
+    @media(max-width:900px){.hero-inner,.element-layout,.palace-wrap,.practice{grid-template-columns:1fr}.hero{min-height:auto}.hero-mark{max-width:460px;margin:auto;width:100%}.section-head{grid-template-columns:100px 1fr}.path{grid-template-columns:repeat(2,1fr)}.path-item:nth-child(3){border-left:0;border-top:1px solid var(--line)}.path-item:nth-child(4){border-top:1px solid var(--line)}.method{grid-template-columns:1fr}.method-step+.method-step{border-left:0}.method-step::before{margin-bottom:12px}.detail{position:static}.symbol-grid{grid-template-columns:repeat(3,1fr)}}
+    @media(max-width:600px){.nav{padding:10px 16px}.brand{display:none}.hero-inner,.section,footer{width:min(100% - 30px,1180px)}.hero-inner{padding:55px 0;gap:15px}.hero-mark{max-width:290px}.section{padding:64px 0}.section-head{grid-template-columns:1fr;gap:8px}.section-no{font-size:1.2rem}.path{grid-template-columns:1fr}.path-item+.path-item{border-left:0;border-top:1px solid var(--line)}.stems{grid-template-columns:repeat(2,1fr)}.stem:last-child{grid-column:span 2}.palace{padding:9px;aspect-ratio:1}.palace strong{font-size:1.15rem}.gate-labels{grid-template-columns:repeat(4,1fr)}.gate-label:nth-child(5){border-left:0}.gate-label:nth-child(n+5){border-top:1px solid var(--line)}.symbol-grid{grid-template-columns:repeat(2,1fr)}.symbol-tabs{overflow:auto}.quiz{padding:24px}footer{flex-direction:column}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn,.progress-fill{transition:none}}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">跳到主要內容</a>
+  <header class="topbar">
+    <nav class="nav" aria-label="主要導覽">
+      <div class="brand">奇門入門研習冊</div>
+      <div class="nav-links"><a href="#path">學習路徑</a><a href="#elements">五行干支</a><a href="#palaces">九宮</a><a href="#symbols">門星神</a><a href="#method">讀盤方法</a><a href="#practice">練習</a></div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="hero-inner">
+        <div>
+          <div class="eyebrow">時家轉盤奇門 · 拆補法</div>
+          <h1>先懂盤，<br>再談斷。</h1>
+          <p>從五行、干支和九宮建立地圖，再把八門、九星、八神放進同一套讀盤順序。一次只學一個系統。</p>
+          <div class="hero-actions"><a class="btn primary" href="#path">開始第一課</a><a class="btn" href="#practice">直接複習</a></div>
+        </div>
+        <div class="hero-mark" aria-hidden="true"><div class="hero-number">九</div><div class="hero-caption">宮 · 門 · 星 · 神</div></div>
+      </div>
+    </section>
+
+    <section class="section" id="path">
+      <div class="section-head"><div class="section-no">壹</div><div class="section-title"><h2>先建立學習地圖</h2><p>不要從吉凶口訣開始。先知道每一層在回答什麼，再慢慢增加細節。</p></div></div>
+      <div class="path">
+        <article class="path-item"><div class="path-tag">基礎語言</div><strong>五行干支</strong><p>理解生剋、十天干與十二地支，看到符號能立刻辨認屬性。</p></article>
+        <article class="path-item"><div class="path-tag">空間地圖</div><strong>八卦九宮</strong><p>熟記宮位、方向與五行。九宮是後續所有判斷的座標。</p></article>
+        <article class="path-item"><div class="path-tag">盤面角色</div><strong>門星神儀</strong><p>八門看行動，九星看環境，八神看隱微因素，奇儀看具體關係。</p></article>
+        <article class="path-item"><div class="path-tag">綜合判讀</div><strong>用神生剋</strong><p>先取用神，再看落宮、組合、旺衰和彼此生剋，最後才下結論。</p></article>
+      </div>
+    </section>
+
+    <section class="section" id="elements">
+      <div class="section-head"><div class="section-no">貳</div><div class="section-title"><h2>五行是盤的文法</h2><p>圖片幫你記形象；真正判斷時，使用下面固定的生剋順序。</p></div></div>
+      <div class="element-layout">
+        <img class="element-art" src="assets/five-elements-mnemonic.webp" alt="木、火、土、金、水五種自然意象環形排列：古木、火焰、梯田、銅鏡與流水">
+        <div class="cycles">
+          <div class="cycle"><h3>相生：把力量交給下一個</h3><div class="cycle-row"><span class="node">木</span><span class="arrow">→</span><span class="node">火</span><span class="arrow">→</span><span class="node">土</span><span class="arrow">→</span><span class="node">金</span><span class="arrow">→</span><span class="node">水</span><span class="arrow">→</span><span class="node">木</span></div></div>
+          <div class="cycle control"><h3>相剋：限制與控制對方</h3><div class="cycle-row"><span class="node">木剋土</span><span>·</span><span class="node">土剋水</span><span>·</span><span class="node">水剋火</span><span>·</span><span class="node">火剋金</span><span>·</span><span class="node">金剋木</span></div></div>
+          <p>讀盤時先問：「誰生誰？誰剋誰？」生不一定永遠好，也可能是付出與洩耗；剋也不一定永遠壞，也可能代表掌控。</p>
+        </div>
+      </div>
+      <div class="stems" aria-label="十天干五行">
+        <div class="stem"><b>甲　乙</b><span>木 · 生長與規劃</span></div><div class="stem"><b>丙　丁</b><span>火 · 顯現與能量</span></div><div class="stem"><b>戊　己</b><span>土 · 承載與資源</span></div><div class="stem"><b>庚　辛</b><span>金 · 阻力與規則</span></div><div class="stem"><b>壬　癸</b><span>水 · 流動與智慧</span></div>
+      </div>
+    </section>
+
+    <section class="section" id="palaces">
+      <div class="section-head"><div class="section-no">參</div><div class="section-title"><h2>九宮是空間地圖</h2><p>上南下北、左東右西。點一個宮位，右側會顯示記憶重點。</p></div></div>
+      <div class="palace-wrap">
+        <div class="palace-grid" aria-label="九宮固定位置">
+          <button class="palace" data-palace="巽四" aria-pressed="false"><small>東南 · 木</small><strong>巽四</strong><span>天輔 · 杜門</span></button>
+          <button class="palace" data-palace="離九" aria-pressed="false"><small>南 · 火</small><strong>離九</strong><span>天英 · 景門</span></button>
+          <button class="palace" data-palace="坤二" aria-pressed="false"><small>西南 · 土</small><strong>坤二</strong><span>天芮 · 死門</span></button>
+          <button class="palace" data-palace="震三" aria-pressed="false"><small>東 · 木</small><strong>震三</strong><span>天沖 · 傷門</span></button>
+          <button class="palace center" data-palace="中五" aria-pressed="true"><small>中央 · 土</small><strong>中五</strong><span>天禽</span></button>
+          <button class="palace" data-palace="兌七" aria-pressed="false"><small>西 · 金</small><strong>兌七</strong><span>天柱 · 驚門</span></button>
+          <button class="palace" data-palace="艮八" aria-pressed="false"><small>東北 · 土</small><strong>艮八</strong><span>天任 · 生門</span></button>
+          <button class="palace" data-palace="坎一" aria-pressed="false"><small>北 · 水</small><strong>坎一</strong><span>天蓬 · 休門</span></button>
+          <button class="palace" data-palace="乾六" aria-pressed="false"><small>西北 · 金</small><strong>乾六</strong><span>天心 · 開門</span></button>
+        </div>
+        <aside class="detail" aria-live="polite"><div class="detail-meta" id="detailMeta">中央 · 土</div><h3 id="detailTitle">中五宮</h3><p id="detailText">中央主調和與承載。轉盤奇門中，天禽星居中五；本頁採用中五寄坤的學習約定。</p><div class="memory-line" id="detailMemory">記憶：五居中央，土承萬物。</div></aside>
+      </div>
+    </section>
+
+    <section class="section" id="symbols">
+      <div class="section-head"><div class="section-no">肆</div><div class="section-title"><h2>門、星、神各管一層</h2><p>先記核心方向，不要一次背完整萬物類象。八門圖從左到右依固定順序排列。</p></div></div>
+      <figure class="gates-art"><img src="assets/eight-gates-mnemonic.webp" alt="八幅無文字場景，依序象徵休、生、傷、杜、景、死、驚、開八門"></figure>
+      <div class="gate-labels" aria-label="八門意象">
+        <div class="gate-label"><b>休門</b><span>休養 · 謀劃</span></div><div class="gate-label"><b>生門</b><span>生長 · 財利</span></div><div class="gate-label"><b>傷門</b><span>競爭 · 損傷</span></div><div class="gate-label"><b>杜門</b><span>封閉 · 隱藏</span></div><div class="gate-label"><b>景門</b><span>顯現 · 文書</span></div><div class="gate-label"><b>死門</b><span>停止 · 結束</span></div><div class="gate-label"><b>驚門</b><span>驚恐 · 口舌</span></div><div class="gate-label"><b>開門</b><span>開創 · 事業</span></div>
+      </div>
+      <div class="symbol-tabs" role="tablist" aria-label="符號分類"><button class="tab" role="tab" aria-selected="true" aria-controls="starsPanel" id="starsTab">九星</button><button class="tab" role="tab" aria-selected="false" aria-controls="spiritsPanel" id="spiritsTab">八神</button></div>
+      <div class="panel" id="starsPanel" role="tabpanel" aria-labelledby="starsTab"><div class="symbol-grid">
+        <article class="symbol-card"><span class="nature">水</span><b>天蓬</b><p>智慧、策劃，也有暗昧與冒險。</p></article><article class="symbol-card"><span class="nature">土</span><b>天芮</b><p>問題、疾病、學習與承擔。</p></article><article class="symbol-card"><span class="nature">木</span><b>天沖</b><p>果斷、速度、開拓與衝動。</p></article><article class="symbol-card"><span class="nature">木</span><b>天輔</b><p>文書、教育、協助與貴人。</p></article><article class="symbol-card"><span class="nature">土</span><b>天禽</b><p>中正、穩定、統合與承載。</p></article><article class="symbol-card"><span class="nature">金</span><b>天心</b><p>領導、技術、治理與醫藥。</p></article><article class="symbol-card"><span class="nature">金</span><b>天柱</b><p>口舌、破壞、壓力與支撐。</p></article><article class="symbol-card"><span class="nature">土</span><b>天任</b><p>務實、信用、緩慢與穩固。</p></article><article class="symbol-card"><span class="nature">火</span><b>天英</b><p>文明、名聲、亮眼與是非。</p></article>
+      </div></div>
+      <div class="panel" id="spiritsPanel" role="tabpanel" aria-labelledby="spiritsTab" hidden><div class="symbol-grid">
+        <article class="symbol-card"><b>值符</b><p>權威、主導、貴人與正面力量。</p></article><article class="symbol-card"><b>螣蛇</b><p>纏繞、疑慮、虛幻與反覆。</p></article><article class="symbol-card"><b>太陰</b><p>細密、隱蔽、暗助與內在。</p></article><article class="symbol-card"><b>六合</b><p>合作、連結、交易與關係。</p></article><article class="symbol-card"><b>白虎</b><p>壓力、猛烈、傷害與執行。</p></article><article class="symbol-card"><b>玄武</b><p>隱情、資訊、欺瞞與流動。</p></article><article class="symbol-card"><b>九地</b><p>低調、穩守、落地與緩慢。</p></article><article class="symbol-card"><b>九天</b><p>高遠、擴張、聲勢與行動。</p></article>
+      </div></div>
+    </section>
+
+    <section class="section" id="method">
+      <div class="section-head"><div class="section-no">伍</div><div class="section-title"><h2>固定五步讀一盤</h2><p>每次都照同一順序，避免看到單一凶象就急著下結論。</p></div></div>
+      <div class="method"><article class="method-step"><h3>先問清楚</h3><p>一盤只處理一個具體問題，時間與情境要清楚。</p></article><article class="method-step"><h3>選取用神</h3><p>日干代表自己；工作看開門，財利看生門，合作看六合。</p></article><article class="method-step"><h3>找到落宮</h3><p>先看用神在哪一宮、宮的五行與是否空亡。</p></article><article class="method-step"><h3>讀同宮組合</h3><p>把門、星、神、天地盤干一起看，不拆成孤立吉凶。</p></article><article class="method-step"><h3>比較生剋</h3><p>比較用神宮和日干宮，最後才形成可驗證的判斷。</p></article></div>
+    </section>
+
+    <section class="section" id="practice">
+      <div class="section-head"><div class="section-no">陸</div><div class="section-title"><h2>用回想代替重讀</h2><p>勾選完成項目會保存在這台裝置。右邊翻卡會隨機抽題。</p></div></div>
+      <div class="practice">
+        <div><h3>第一輪進度</h3><div class="progress-track" aria-hidden="true"><div class="progress-fill" id="progressFill"></div></div><p id="progressText" aria-live="polite">完成 0／6</p><div class="checklist">
+          <label class="check-row"><input type="checkbox" data-progress="elements"><span><b>五行生剋</b><br><small>不用看表說出相生與相剋。</small></span></label><label class="check-row"><input type="checkbox" data-progress="stems"><span><b>十天干五行</b><br><small>看到天干立即說出五行。</small></span></label><label class="check-row"><input type="checkbox" data-progress="palaces"><span><b>九宮位置</b><br><small>能默畫上南下北九宮圖。</small></span></label><label class="check-row"><input type="checkbox" data-progress="gates"><span><b>八門核心象意</b><br><small>每門先掌握兩個關鍵詞。</small></span></label><label class="check-row"><input type="checkbox" data-progress="stars"><span><b>九星與八神</b><br><small>先辨角色，不急著細斷。</small></span></label><label class="check-row"><input type="checkbox" data-progress="method"><span><b>五步讀盤</b><br><small>能按順序分析一張盤。</small></span></label>
+        </div></div>
+        <div class="quiz" aria-live="polite"><div class="quiz-label" id="quizCategory">九宮位置</div><div class="quiz-prompt" id="quizPrompt">坎一宮在哪個方向？</div><div class="quiz-answer" id="quizAnswer">先在心裡回答，再翻牌。</div><div class="quiz-actions"><button class="btn primary" id="revealBtn">顯示答案</button><button class="btn" id="nextBtn">下一題</button></div></div>
+      </div>
+      <div class="note"><p>學習範圍：時家轉盤奇門、拆補法。不同派別在起局、換日、寄宮等細節可能不同，初學階段不要混用。</p><div class="sources"><a href="https://www.hko.gov.hk/tc/gts/time/stemsandbranches.htm">天干地支：香港天文台</a><a href="https://www.hko.gov.hk/tc/gts/time/24solarterms.htm">二十四節氣：香港天文台</a><a href="../qimen-learning/">本頁離線可用</a></div></div>
+    </section>
+  </main>
+  <footer><span>奇門入門研習冊</span><span>傳統術數學習資料 · 重要決策仍以現實證據判斷</span></footer>
+
+  <script>
+    const palaceData={
+      '巽四':['東南 · 木','巽四宮','原始配置為天輔星、杜門。巽有進入、流動與滲透的空間感。','記憶：東南風入巽，四宮屬木。'],
+      '離九':['南 · 火','離九宮','原始配置為天英星、景門。離主光明、顯現，也容易讓事情被看見。','記憶：南方日光最盛，離火居九。'],
+      '坤二':['西南 · 土','坤二宮','原始配置為天芮星、死門。坤主承載、順勢與大地。','記憶：大地為坤，二宮在西南。'],
+      '震三':['東 · 木','震三宮','原始配置為天沖星、傷門。震像雷動，帶有啟動與衝擊。','記憶：東方春雷起，震木居三。'],
+      '中五':['中央 · 土','中五宮','中央主調和與承載。轉盤奇門中，天禽星居中五；本頁採用中五寄坤的學習約定。','記憶：五居中央，土承萬物。'],
+      '兌七':['西 · 金','兌七宮','原始配置為天柱星、驚門。兌與言語、交流和喜悅相關。','記憶：西方屬金，兌口居七。'],
+      '艮八':['東北 · 土','艮八宮','原始配置為天任星、生門。艮像山，象徵停止、界線與積累。','記憶：東北有山，艮土居八。'],
+      '坎一':['北 · 水','坎一宮','原始配置為天蓬星、休門。坎主水、深處、流動與風險。','記憶：北方寒水，坎水居一。'],
+      '乾六':['西北 · 金','乾六宮','原始配置為天心星、開門。乾主天、主導、規則與開創。','記憶：西北為天，乾金居六。']
+    };
+    document.querySelectorAll('.palace').forEach(btn=>btn.addEventListener('click',()=>{
+      document.querySelectorAll('.palace').forEach(x=>x.setAttribute('aria-pressed','false'));btn.setAttribute('aria-pressed','true');
+      const d=palaceData[btn.dataset.palace];document.getElementById('detailMeta').textContent=d[0];document.getElementById('detailTitle').textContent=d[1];document.getElementById('detailText').textContent=d[2];document.getElementById('detailMemory').textContent=d[3];
+    }));
+    document.querySelectorAll('[role="tab"]').forEach(tab=>tab.addEventListener('click',()=>{
+      document.querySelectorAll('[role="tab"]').forEach(t=>t.setAttribute('aria-selected','false'));tab.setAttribute('aria-selected','true');
+      document.querySelectorAll('[role="tabpanel"]').forEach(p=>p.hidden=true);document.getElementById(tab.getAttribute('aria-controls')).hidden=false;
+    }));
+    const checks=[...document.querySelectorAll('[data-progress]')];
+    try{const saved=JSON.parse(localStorage.getItem('qimenProgress')||'{}');checks.forEach(c=>c.checked=!!saved[c.dataset.progress])}catch(e){}
+    function updateProgress(){const done=checks.filter(c=>c.checked).length;document.getElementById('progressFill').style.width=(done/checks.length*100)+'%';document.getElementById('progressText').textContent=`完成 ${done}／${checks.length}`;const state={};checks.forEach(c=>state[c.dataset.progress]=c.checked);try{localStorage.setItem('qimenProgress',JSON.stringify(state))}catch(e){}}
+    checks.forEach(c=>c.addEventListener('change',updateProgress));updateProgress();
+    const quiz=[
+      ['九宮位置','坎一宮在哪個方向？','北方，五行屬水。'],['九宮位置','離九宮在哪個方向？','南方，五行屬火。'],['九宮位置','乾六宮在哪個方向？','西北，五行屬金。'],['九宮位置','震三宮的原始星門？','天沖星、傷門。'],['五行生剋','金生什麼？又剋什麼？','金生水，金剋木。'],['五行生剋','木生什麼？又剋什麼？','木生火，木剋土。'],['十天干','丙、丁屬什麼五行？','丙、丁屬火。'],['十天干','壬、癸屬什麼五行？','壬、癸屬水。'],['八門','哪一門代表工作與開創？','開門。'],['八門','哪一門代表財利與生長？','生門。'],['八門','杜門的核心狀態？','封閉、堵塞與隱藏。'],['讀盤方法','工作問題主要看哪個門？','開門；同時以日干看自己、值符看主導力量。'],['讀盤方法','找到用神之後先看什麼？','看它落在哪一宮、宮的五行，以及是否空亡。']
+    ];
+    let qIndex=0,revealed=false;
+    function drawQuiz(){const q=quiz[qIndex];document.getElementById('quizCategory').textContent=q[0];document.getElementById('quizPrompt').textContent=q[1];document.getElementById('quizAnswer').textContent='先在心裡回答，再翻牌。';document.getElementById('revealBtn').textContent='顯示答案';revealed=false}
+    document.getElementById('revealBtn').addEventListener('click',()=>{revealed=!revealed;document.getElementById('quizAnswer').textContent=revealed?quiz[qIndex][2]:'先在心裡回答，再翻牌。';document.getElementById('revealBtn').textContent=revealed?'收起答案':'顯示答案'});
+    document.getElementById('nextBtn').addEventListener('click',()=>{let next=qIndex;while(next===qIndex)next=Math.floor(Math.random()*quiz.length);qIndex=next;drawQuiz()});
+  </script>
+</body>
+</html>
