@@ -16,13 +16,15 @@ with sync_playwright() as pw:
         errors = []
         page.on("pageerror", lambda error: errors.append(str(error)))
         page.goto(page_path, wait_until="load")
-        assert page.locator("img").count() == 2
+        assert page.locator("img").count() == 6
         assert page.locator("img").evaluate_all("els => els.every(x => x.complete && x.naturalWidth > 0)")
         assert page.locator(".palace").count() == 9
         page.locator('[data-palace="坎一"]').click()
         assert page.locator("#detailTitle").inner_text() == "坎一宮"
         page.locator("#spiritsTab").click()
         assert page.locator("#spiritsPanel").is_visible()
+        assert page.locator("#spiritsPanel img").is_visible()
+        assert page.locator("#spiritsPanel img").evaluate("el => el.complete && el.naturalWidth > 0")
         page.locator("#revealBtn").click()
         assert "先在心裡回答" not in page.locator("#quizAnswer").inner_text()
         page.locator('[data-progress="elements"]').check()

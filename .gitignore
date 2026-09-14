@@ -1,6 +1,16 @@
-﻿assets/*.png
+assets/*.png
 verification/
 deploy/
 __pycache__/
 *.pyc
 .DS_Store
+
+# 生圖底稿與檢查用檔案，不進版控
+assets/_inspect/
+assets/wuxing-elements-*
+assets/wuxing-relations-v*.svg
+assets/wuxing-relations.svg
+image-*.webp
+
+# 例外：產圖腳本需要這張底圖
+!assets/wuxing-bg-sq.png
