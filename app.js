@@ -21,14 +21,7 @@ document.querySelectorAll('.palace').forEach(btn=>btn.addEventListener('click',(
     `<dt>${v.k}</dt><dd>${v.t}<span class="src">${v.s}</span></dd>`).join('');
   document.getElementById('detailMemory').textContent=d.memo;
 }));
-document.querySelectorAll('[role="tab"]').forEach(tab=>tab.addEventListener('click',()=>{
-  document.querySelectorAll('[role="tab"]').forEach(t=>t.setAttribute('aria-selected','false'));tab.setAttribute('aria-selected','true');
-  document.querySelectorAll('[role="tabpanel"]').forEach(p=>p.hidden=true);document.getElementById(tab.getAttribute('aria-controls')).hidden=false;
-}));
-const checks=[...document.querySelectorAll('[data-progress]')];
-try{const saved=JSON.parse(localStorage.getItem('qimenProgress')||'{}');checks.forEach(c=>c.checked=!!saved[c.dataset.progress])}catch(e){}
-function updateProgress(){const done=checks.filter(c=>c.checked).length;document.getElementById('progressFill').style.width=(done/checks.length*100)+'%';document.getElementById('progressText').textContent=`完成 ${done}／${checks.length}`;const state={};checks.forEach(c=>state[c.dataset.progress]=c.checked);try{localStorage.setItem('qimenProgress',JSON.stringify(state))}catch(e){}}
-checks.forEach(c=>c.addEventListener('change',updateProgress));updateProgress();
+try{localStorage.removeItem('qimenProgress')}catch(e){}   // 不再保存進度，順手清掉舊資料
 const quiz=[
   ['九宫位置','坎一宫在哪個方向？','北方，五行屬水。'],['九宫位置','離九宫在哪個方向？','南方，五行屬火。'],['九宫位置','乾六宫在哪個方向？','西北，五行屬金。'],['九宫位置','震三宫的原始星門？','天沖星、傷門。'],['五行生剋','金生什麼？又剋什麼？','金生水，金剋木。'],['五行生剋','木生什麼？又剋什麼？','木生火，木剋土。'],['十天干','丙、丁屬什麼五行？','丙、丁屬火。'],['十天干','壬、癸屬什麼五行？','壬、癸屬水。'],['八門','哪一門代表工作與開創？','開門。'],['八門','哪一門代表財利與生長？','生門。'],['八門','杜門的核心狀態？','封閉、堵塞與隱藏。'],['讀盤方法','工作問題主要看哪個門？','開門；同時以日干看自己、值符看主導力量。'],['讀盤方法','找到用神之後先看什麼？','看它落在哪一宫、宫的五行，以及是否空亡。']
 ];
@@ -41,3 +34,40 @@ window.onQimenPan=()=>{rebuildPool();document.getElementById('quizSource').hidde
 function drawQuiz(){const q=pool[qIndex];document.getElementById('quizCategory').textContent=q[0];document.getElementById('quizPrompt').textContent=q[1];document.getElementById('quizAnswer').textContent='先在心裡回答，再翻牌。';document.getElementById('revealBtn').textContent='顯示答案';document.getElementById('quizSource').hidden=!q[0].startsWith('看盤');revealed=false}
 document.getElementById('revealBtn').addEventListener('click',()=>{revealed=!revealed;document.getElementById('quizAnswer').textContent=revealed?pool[qIndex][2]:'先在心裡回答，再翻牌。';document.getElementById('revealBtn').textContent=revealed?'收起答案':'顯示答案'});
 document.getElementById('nextBtn').addEventListener('click',()=>{rebuildPool();let next=qIndex;while(next===qIndex&&pool.length>1)next=Math.floor(Math.random()*pool.length);qIndex=next;drawQuiz()});
+
+// ── 章節分頁（導覽列即分頁鈕）────────────────────────────
+// 不保存狀態：重整就回到第一章。
+const chapLinks=[...document.querySelectorAll('.nav-links a[href^="#"]')];
+const chapSecs=chapLinks.map(a=>document.getElementById(a.getAttribute('href').slice(1)))
+                        .filter(Boolean);
+const allBtn=document.getElementById('chapAll');
+let showAll=false;
+function showChapter(id){
+  showAll=false; allBtn.setAttribute('aria-pressed','false');
+  chapLinks.forEach(a=>a.classList.toggle('on',a.getAttribute('href').slice(1)===id));
+  chapSecs.forEach(sec=>sec.hidden=(sec.id!==id));
+  scrollTo({top:0});
+}
+chapLinks.forEach(a=>a.addEventListener('click',e=>{
+  const id=a.getAttribute('href').slice(1);
+  if(chapSecs.some(s=>s.id===id)){e.preventDefault();showChapter(id);}
+}));
+allBtn.addEventListener('click',()=>{
+  showAll=!showAll;
+  allBtn.setAttribute('aria-pressed',String(showAll));
+  if(showAll)chapSecs.forEach(sec=>sec.hidden=false);
+  else showChapter((chapLinks.find(a=>a.classList.contains('on'))||chapLinks[0])
+                   .getAttribute('href').slice(1));
+});
+showChapter(chapSecs[0].id);
+
+// ── 玖節的子分頁 ──────────────────────────────────────────
+document.querySelectorAll('.subtabs [role="tab"],.symbol-tabs [role="tab"]').forEach(tab=>{
+  tab.addEventListener('click',()=>{
+    const bar=tab.closest('[role="tablist"]');
+    bar.querySelectorAll('[role="tab"]').forEach(t=>{
+      t.setAttribute('aria-selected',String(t===tab));
+      document.getElementById(t.getAttribute('aria-controls')).hidden=(t!==tab);
+    });
+  });
+});

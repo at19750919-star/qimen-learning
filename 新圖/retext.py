@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 """把 v4-grid 的三列圖片原樣搬過來，只重做文字帶。
 
-依 .claude/skills/qimen-page/SKILL.md 二之二：
-  主名 --fs-5(31) x2.03 = 63px  山海行業格特  #201f1b
-  次名 --fs-3(20) x2.03 = 41px  香萃刻宋      #635d53
-  副標 --fs-1(12.8)x2.03 = 26px 香萃刻宋      #635d53
+字型與顏色依 .claude/skills/qimen-page/SKILL.md 二之二（style.css 就是這樣定的）：
+  主名 山海行業格特 #201f1b --ink
+  次名、副標 Shippori Mincho #635d53 --muted
+字級是這次選的，不是規格。
 字型檔放 _fonts/，由 子集化.py 從原始檔產生，不讀本機系統路徑。
 """
 import sys
@@ -45,6 +45,7 @@ INFO = {
     "天英": ("離九・火", ["為火，為爐冶人，為殘患"]),
 }
 
+# 以下字級與間距都是本專案這次選的值，不是規格。改了就重跑，用 驗圖字.py 驗。
 S_NAME, S_GONG, S_SUB = 63, 41, 26
 PAD_TOP, GAP_NAME, LINE, PAD_BOT = 26, 16, 42, 30
 MAXLINE = max(len(v[1]) for v in INFO.values())
