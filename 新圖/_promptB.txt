@@ -1,0 +1,24 @@
+用 image_gen 生成一張 16:9 橫幅，存成 新圖/v2b-gen.png。
+
+## 畫風（這段是你自己看參考圖後寫的，照用）
+Contemporary digital gongbi-dancai illustration: fine even outlines in warm dark-brown ink with only slight calligraphic taper, filled with thin translucent watercolor washes that leave the cream paper showing through. Painted on smooth warm rice-paper tone around #ded6c3, mounted on a perfectly flat beige field #eae0cd. Muted earth palette only — pine-soot ink, dusty cinnabar/brick red #a15a47, ochre, khaki, and pale peach skin — no mineral blue or green, no pure saturated hues. Modeling by fold-washes rather than Western cast shadows; faces nearly flat-lit. Tall extremely narrow vertical picture-strips cropped as clean rectangles with no drawn borders, no silk mounting, no scroll rods, sitting edge-to-edge with a 1-pixel mat gap. Clean digital execution, not a scan of an old painting, not ukiyo-e, not manhua, not splash-ink xieyi, not heavy opaque mineral-color gongbi.
+
+## 但這三項要覆蓋掉上面那段的語氣
+你原本寫「low-to-medium contrast」和「empty negative space is part of the design」。實測參考圖不是那樣，**以下數字為準**：
+
+- **畫心近黑像素(灰階<60) 要達到約 9% 面積**（上一版只有 1.76%，太淡了）
+- **整體對比 std 要達到約 57**（上一版只有 34.9）
+- **有彩度像素(HSV的S>60) 要達到約 17%**（上一版只有 8%），磚紅 #a15a47 每一格都要出現
+- **人物是主體，不是山水**。中近景，半身到七分身，人物約佔格高七成，腳可裁切。
+  上一版把人畫得太小太遠、變成風景畫，這是最大的錯誤
+
+## 版面
+- 九條等寬豎格橫排，格間只有約 1px 的底色縫，**不要邊框、不要卷軸天桿軸頭、不要綾裱、不要外圍大留白**
+- 每格正下方要有兩層中文字：
+  第一行是兩字星名，明體帶襯線，深褐 #312a1f，較大
+  其下兩行是短語，細黑體，灰褐 #847b6a，明顯小一截
+- 中文字務必正確，不要錯字、不要亂碼
+
+【九格畫面與文字】見檔案 新圖/_scenes.txt，請先讀它。
+
+生成後存 新圖/v2b-gen.png，回報實際像素。不要動專案其他檔案。

@@ -1,16 +1,13 @@
-assets/*.png
-verification/
-deploy/
 __pycache__/
 *.pyc
 .DS_Store
 
-# 生圖底稿與檢查用檔案，不進版控
-assets/_inspect/
-assets/wuxing-elements-*
-assets/wuxing-relations-v*.svg
-assets/wuxing-relations.svg
-image-*.webp
+# 產圖中途版本與檢查暫存
+新圖/_chk_*
+新圖/_zoom*
+新圖/_n_*
 
-# 例外：產圖腳本需要這張底圖
-!assets/wuxing-bg-sq.png
+# 字型原始檔（數 MB，各機自備；img-*.ttf 是子集化後的成品，進版控）
+新圖/_fonts/*.ttf
+!新圖/_fonts/img-name.ttf
+!新圖/_fonts/img-body.ttf

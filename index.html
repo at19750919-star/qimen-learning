@@ -3,8 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="時家轉盤奇門・拆補法的零基礎學習頁：五行、九宮、八門、九星、八神與讀盤步驟。">
+  <meta name="description" content="時家轉盤奇門・拆補法的零基礎學習頁：五行、九宫、八門、九星、八神與讀盤步驟。">
   <title>奇門入門研習冊</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;600;700&family=Kaisei+Decol:wght@400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,7 +15,7 @@
   <header class="topbar">
     <nav class="nav" aria-label="主要導覽">
       <div class="brand">奇門入門研習冊</div>
-      <div class="nav-links"><a href="#path">學習路徑</a><a href="#elements">五行干支</a><a href="#palaces">九宮</a><a href="#symbols">門星神</a><a href="#method">讀盤方法</a><a href="#yongshen">取用神</a><a href="#qiju">起局原理</a><a href="#liujia">甲遁六儀</a><a href="#wangshuai">旺衰格局</a><a href="#paipan">一鍵起局</a><a href="#practice">練習</a></div>
+      <div class="nav-links"><a href="#path">學習路徑</a><a href="#elements">五行干支</a><a href="#palaces">九宫</a><a href="#symbols">門星神</a><a href="#method">讀盤方法</a><a href="#yongshen">取用神</a><a href="#qiju">起局原理</a><a href="#liujia">甲遁六儀</a><a href="#wangshuai">旺衰格局</a><a href="#paipan">一鍵起局</a><a href="#practice">練習</a></div>
     </nav>
   </header>
 
@@ -22,108 +25,206 @@
         <div>
           <div class="eyebrow">時家轉盤奇門 · 拆補法</div>
           <h1>先懂盤，<br>再談斷。</h1>
-          <p>從五行、干支和九宮建立地圖，再把八門、九星、八神放進同一套讀盤順序。一次只學一個系統。</p>
+          <p>從五行、干支和九宫建立地圖，再把八門、九星、八神放進同一套讀盤順序。一次只學一個系統。</p>
+          <p class="note">本站的類象、格局與取用一律引《奇門遁甲統宗》《遁甲演義》《御定奇門遁甲寶鑒》《煙波釣叟歌》原文，每條標明出處；沒有出處的教學整理會另外標示，查不到的直接寫「查無出處」。</p>
           <div class="hero-actions"><a class="btn primary" href="#path">開始第一課</a><a class="btn" href="#practice">直接複習</a></div>
         </div>
-        <div class="hero-mark" aria-hidden="true"><div class="hero-number">九</div><div class="hero-caption">宮 · 門 · 星 · 神</div></div>
+        <div class="hero-mark" aria-hidden="true"><div class="hero-number">九</div><div class="hero-caption">宫 · 門 · 星 · 神</div></div>
       </div>
     </section>
 
     <section class="section" id="path">
-      <div class="section-head"><div class="section-no">壹</div><div class="section-title"><h2>先建立學習地圖</h2><p>不要從吉凶口訣開始。先知道每一層在回答什麼，再慢慢增加細節。</p></div></div>
+      <div class="section-head"><div class="section-no">壹</div><div class="section-title"><h2>先建立學習地圖</h2><p>不要從吉凶口訣開始。先知道每一層在回答什麼，再慢慢增加細節。<br><span class="note">本節是本頁的學習順序安排，不是典籍分類。</span></p></div></div>
       <div class="path">
-        <article class="path-item"><div class="path-tag">基礎語言</div><strong>五行干支</strong><p>理解生剋、十天干與十二地支，看到符號能立刻辨認屬性。</p></article>
-        <article class="path-item"><div class="path-tag">空間地圖</div><strong>八卦九宮</strong><p>熟記宮位、方向與五行。九宮是後續所有判斷的座標。</p></article>
-        <article class="path-item"><div class="path-tag">盤面角色</div><strong>門星神儀</strong><p>八門看行動，九星看環境，八神看隱微因素，奇儀看具體關係。</p></article>
-        <article class="path-item"><div class="path-tag">綜合判讀</div><strong>用神生剋</strong><p>先取用神，再看落宮、組合、旺衰和彼此生剋，最後才下結論。</p></article>
+        <article class="path-item card"><div class="path-tag">基礎語言</div><strong>五行干支</strong><p>理解生剋、十天干與十二地支，看到符號能立刻辨認屬性。</p></article>
+        <article class="path-item card"><div class="path-tag">空間地圖</div><strong>八卦九宫</strong><p>熟記宫位、方向與五行。九宫是後續所有判斷的座標。</p></article>
+        <article class="path-item card"><div class="path-tag">盤面角色</div><strong>門星神儀</strong><p>八門看行動，九星看環境，八神看隱微因素，奇儀看具體關係。</p></article>
+        <article class="path-item card"><div class="path-tag">綜合判讀</div><strong>用神生剋</strong><p>先取用神，再看落宫、組合、旺衰和彼此生剋，最後才下結論。</p></article>
       </div>
     </section>
 
     <section class="section" id="elements">
-      <div class="section-head"><div class="section-no">貳</div><div class="section-title"><h2>五行是盤的文法</h2><p>先看每一行管什麼、有哪些成員，再記住固定的生剋順序。</p></div></div>
-      <figure class="wuxing-map">
-        <img src="assets/wuxing-relations.webp" width="1200" height="1200" loading="lazy" alt="五行歸屬圖：木火土金水五組環繞中央太極，每組列出所屬的天干、地支、九宮、九星、八門與卦象">
-        <figcaption>五行歸屬一覽。每一組列出同屬該行的天干、地支、九宮、九星與八門，大字右側是該行對應的卦。八神不配五行，故不在圖中。</figcaption>
-      </figure>
-      <div class="cycles">
-        <div class="cycle"><h3>相生：把力量交給下一個</h3><div class="cycle-row"><span class="node">木</span><span class="arrow">→</span><span class="node">火</span><span class="arrow">→</span><span class="node">土</span><span class="arrow">→</span><span class="node">金</span><span class="arrow">→</span><span class="node">水</span><span class="arrow">→</span><span class="node">木</span></div></div>
-        <div class="cycle control"><h3>相剋：限制與控制對方</h3><div class="cycle-row"><span class="node">木剋土</span><span>·</span><span class="node">土剋水</span><span>·</span><span class="node">水剋火</span><span>·</span><span class="node">火剋金</span><span>·</span><span class="node">金剋木</span></div></div>
-        <p>讀盤時先問：「誰生誰？誰剋誰？」生不一定永遠好，也可能是付出與洩耗；剋也不一定永遠壞，也可能代表掌控。</p>
+      <div class="section-head"><div class="section-no">貳</div><div class="section-title"><h2>五行是盤的文法</h2><p>先看每一行管什麼、有哪些成員，再記住固定的生剋順序。<br><span class="note">本節是五行通則的整理，非奇門典籍專條。與奇門直接相關的旺相休囚廢見第玖節，各有出處。</span></p></div></div>
+      <div class="wx-layout">
+        <figure class="wuxing-map">
+          <img src="assets/wuxing-relations.webp" width="1200" height="1200" loading="lazy" alt="五行歸屬圖：木火土金水五組環繞中央太極，每組列出所屬的天干、地支、九宫、九星、八門與卦象">
+          <figcaption>五行歸屬一覽。每一組列出同屬該行的天干、地支、九宫、九星與八門，大字右側是該行對應的卦。八神不配五行，故不在圖中。<span class="src">宫－星－門的歸屬出《御定奇門遁甲寶鑒》卷一〈漢陰居士歌〉：「休使蓬符居坎水，任生艮土寄陰禽，衝傷震木從三起，巽藏杜輔景英離，坤寄陽禽芮死隨，柱驚七兌開心六」；《遁甲演義》卷一〈黃帝陰符經〉同。天干地支的五行歸屬爲通則。</span></figcaption>
+        </figure>
+        <div class="wx-text">
+          <div class="cycles">
+            <div class="cycle card"><h3>相生：把力量交給下一個</h3><div class="cycle-row"><span class="node">木</span><span class="arrow">→</span><span class="node">火</span><span class="arrow">→</span><span class="node">土</span><span class="arrow">→</span><span class="node">金</span><span class="arrow">→</span><span class="node">水</span><span class="arrow">→</span><span class="node">木</span></div></div>
+            <div class="cycle control card"><h3>相剋：限制與控制對方</h3><div class="cycle-row"><span class="node">木剋土</span><span>·</span><span class="node">土剋水</span><span>·</span><span class="node">水剋火</span><span>·</span><span class="node">火剋金</span><span>·</span><span class="node">金剋木</span></div></div>
+          </div>
+
+          <div class="wx-block band">
+            <h3>生剋要站在用神這一邊看</h3>
+            <p class="lead">生不一定好、剋不一定壞，差别在於誰是「我」。</p>
+            <p class="note">讀盤時先把用神的五行定爲我，其餘四種關係就自動定位。比如問錢財，生門屬<i class="e e-土">土</i>是我，<i class="e e-木">木</i>來剋<i class="e e-土">土</i>是阻力，<i class="e e-火">火</i>來生<i class="e e-土">土</i>是助力。</p>
+            <table class="mini-table"><caption>以用神爲我的五種關係</caption>
+              <thead><tr><th>關係</th><th>例（我＝<i class="e e-木">木</i>）</th><th>讀成什麼</th></tr></thead>
+              <tbody>
+                <tr><th>生我</th><td><i class="e e-水">水</i>生<i class="e e-木">木</i></td><td><b class="k">助力與靠山</b>資源送上門，事情有人推。</td></tr>
+                <tr><th>我生</th><td><i class="e e-木">木</i>生<i class="e e-火">火</i></td><td><b class="k">付出與洩耗</b>自己出力成全别人，久了會虛。</td></tr>
+                <tr><th>剋我</th><td><i class="e e-金">金</i>剋<i class="e e-木">木</i></td><td><b class="k">壓力與阻礙</b>來源看是哪一宫哪個門。</td></tr>
+                <tr><th>我剋</th><td><i class="e e-木">木</i>剋<i class="e e-土">土</i></td><td><b class="k">掌控與可得</b>求財多從這裡看。</td></tr>
+                <tr><th>同我</th><td><i class="e e-木">木</i>見<i class="e e-木">木</i></td><td><b class="k">比和</b>有同伴相助，也可能是競爭對手分食。</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="wx-block band">
+            <h3>三種會改寫結論的旁支</h3>
+            <p class="lead">生剋之外還有三種狀態，不先認出來就會把吉凶判反。</p>
+            <dl class="wx-defs">
+              <dt>比和</dt><dd><b class="k">兩邊同五行，不生不剋。</b>氣順、溝通容易，但誰也推不動誰；合作可，指望對方帶頭則難。</dd>
+              <dt>反侮</dt><dd><b class="k">該被剋的一方太旺，反過來剋回去。</b><i class="e e-木">木</i>旺<i class="e e-金">金</i>缺時<i class="e e-金">金</i>剋不動<i class="e e-木">木</i>，反被<i class="e e-木">木</i>損。所以判生剋前要先比雙方旺衰，否則會把強者判成弱者。</dd>
+              <dt>貪生忘剋</dt><dd><b class="k">中間站進來一個化解者，剋就轉成生。</b><i class="e e-金">金</i>剋<i class="e e-木">木</i>，若中間有<i class="e e-水">水</i>，<i class="e e-金">金</i>生<i class="e e-水">水</i>、<i class="e e-水">水</i>生<i class="e e-木">木</i>，壓力變成助力。看到相剋别急著斷凶，先找有沒有中間的那一行。</dd>
+            </dl>
+          </div>
+
+          <div class="wx-block band">
+            <h3>土爲什麼成員特别多</h3>
+            <p class="lead"><i class="e e-土">土</i>不獨佔一季，而是分居四季之末。</p><p class="note">「各十八天」是曆法通說，<b>本站語料庫查無</b>；語料庫只有《遁甲演義》卷三土旺四維之說，未寫日數。</p>
+            <p class="note">所以圖上<i class="e e-土">土</i>那一組明顯比别組長：地支佔了辰、戌、丑、未四個，九宫佔了坤二、中五、艮八三個。它同時是四季土，也是中央，扮演交接與承載的角色。</p>
+            <p class="note">中五在九宫圖上沒有門，天禽星居之。<b>中五寄坤</b>有正文，不是本頁自訂：統宗〈奇門妙祕賦〉「中宮，寄坤宮也」、〈天禽〉「寄於坤宮」、〈以旬首取符使法〉「甲辰在中宫，寄於坤二，天禽爲符，死門爲使」。凡落中五者依坤二宫論。<span class="src">另有異本：統宗〈九星〉「一本陽遁寄坤宮陰遁寄艮宮」，本頁不採。</span></p>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="section" id="palaces">
-      <div class="section-head"><div class="section-no">參</div><div class="section-title"><h2>九宮是空間地圖</h2><p>上南下北、左東右西。點一個宮位，右側會顯示記憶重點。</p></div></div>
+      <div class="section-head"><div class="section-no">參</div><div class="section-title"><h2>九宫是空間地圖</h2><p>上南下北、左東右西。點一個宫位，右側列出該宫的卦象、九星、八門類象，全部引《奇門遁甲統宗》卷二原文。</p></div></div>
       <div class="palace-wrap">
         <div class="palace-main">
-        <figure class="gates-art"><img src="assets/nine-palaces-mnemonic.webp" alt="上南下北九宮風景圖：巽風、離火、坤地、震雷、中土、兌澤、艮山、坎水、乾天"></figure>
-        <div class="palace-grid" aria-label="九宮固定位置">
-          <button class="palace" data-palace="巽四" aria-pressed="false"><small>東南 · 木</small><strong>巽四</strong><span>天輔 · 杜門</span></button>
-          <button class="palace" data-palace="離九" aria-pressed="false"><small>南 · 火</small><strong>離九</strong><span>天英 · 景門</span></button>
-          <button class="palace" data-palace="坤二" aria-pressed="false"><small>西南 · 土</small><strong>坤二</strong><span>天芮 · 死門</span></button>
-          <button class="palace" data-palace="震三" aria-pressed="false"><small>東 · 木</small><strong>震三</strong><span>天沖 · 傷門</span></button>
-          <button class="palace center" data-palace="中五" aria-pressed="true"><small>中央 · 土</small><strong>中五</strong><span>天禽</span></button>
-          <button class="palace" data-palace="兌七" aria-pressed="false"><small>西 · 金</small><strong>兌七</strong><span>天柱 · 驚門</span></button>
-          <button class="palace" data-palace="艮八" aria-pressed="false"><small>東北 · 土</small><strong>艮八</strong><span>天任 · 生門</span></button>
-          <button class="palace" data-palace="坎一" aria-pressed="false"><small>北 · 水</small><strong>坎一</strong><span>天蓬 · 休門</span></button>
-          <button class="palace" data-palace="乾六" aria-pressed="false"><small>西北 · 金</small><strong>乾六</strong><span>天心 · 開門</span></button>
+        <div class="compass">
+          <span class="cp cp-s" aria-hidden="true">南</span>
+          <span class="cp cp-e" aria-hidden="true">東</span>
+          <span class="cp cp-w" aria-hidden="true">西</span>
+          <span class="cp cp-n" aria-hidden="true">北</span>
+          <div class="palace-grid" aria-label="九宫固定位置（上南下北、左東右西）">
+          <button class="palace" data-palace="巽四" aria-pressed="false"><small>東南 · <i class="e e-木">木</i></small><strong>巽四</strong><span>天輔 · 杜門</span></button>
+          <button class="palace" data-palace="離九" aria-pressed="false"><small>南 · <i class="e e-火">火</i></small><strong>離九</strong><span>天英 · 景門</span></button>
+          <button class="palace" data-palace="坤二" aria-pressed="false"><small>西南 · <i class="e e-土">土</i></small><strong>坤二</strong><span>天芮 · 死門</span></button>
+          <button class="palace" data-palace="震三" aria-pressed="false"><small>東 · <i class="e e-木">木</i></small><strong>震三</strong><span>天沖 · 傷門</span></button>
+          <button class="palace center" data-palace="中五" aria-pressed="true"><small>中央 · <i class="e e-土">土</i></small><strong>中五</strong><span>天禽</span></button>
+          <button class="palace" data-palace="兑七" aria-pressed="false"><small>西 · <i class="e e-金">金</i></small><strong>兑七</strong><span>天柱 · 驚門</span></button>
+          <button class="palace" data-palace="艮八" aria-pressed="false"><small>東北 · <i class="e e-土">土</i></small><strong>艮八</strong><span>天任 · 生門</span></button>
+          <button class="palace" data-palace="坎一" aria-pressed="false"><small>北 · <i class="e e-水">水</i></small><strong>坎一</strong><span>天蓬 · 休門</span></button>
+          <button class="palace" data-palace="乾六" aria-pressed="false"><small>西北 · <i class="e e-金">金</i></small><strong>乾六</strong><span>天心 · 開門</span></button>
+          </div>
         </div>
         </div>
-        <aside class="detail" aria-live="polite"><div class="detail-meta" id="detailMeta">中央 · 土</div><h3 id="detailTitle">中五宮</h3><p id="detailText">中央主調和與承載。轉盤奇門中，天禽星居中五；本頁採用中五寄坤的學習約定。</p><div class="memory-line" id="detailMemory">記憶：五居中央，土承萬物。</div></aside>
+        <aside class="detail band" aria-live="polite"><div class="detail-meta" id="detailMeta">中央 · <i class="e e-土">土</i></div><h3 id="detailTitle">中五宫</h3><p class="lead" id="detailText">中央主調和與承載，本頁採中五寄坤的學習約定。</p>
+        <dl class="lx" id="detailLx"><dt>宫 · 中宫無卦</dt><dd>中五無卦無門，六儀寄於坤二。統宗〈以旬首取符使法〉：「甲辰在中宫，寄於坤二，天禽爲符，死門爲使。」<span class="src">統宗卷之二〈以旬首取符使法〉</span></dd><dt>星 · 天禽</dt><dd>天禽：為工，為師巫，為法士，其音為宮，宜祭祀神祗，商賈、埋葬、移徙皆吉，秋冬大利，春夏小凶。寄於坤宮，依門債戶，其神不正吉，亦非全。豫州分野。<span class="src">統宗卷之二〈天禽〉</span></dd><dt>星 · 天禽所主</dt><dd>天禽所主：禽星宜祭祀、祈福、斷滅羣凶、入官見貴、賜爵賞功、應舉、謀望、嫁娶、移徙、商賈、營建。凡將兵征伐，亥子寅卯月日加三四宮利為主，辰戌丑未月日加一宮利為客。廉貞星也。<span class="src">統宗卷之二〈天禽所主〉</span></dd><dt>門 · 中宫不配門</dt><dd>中五不配八門，寄坤二則依死門論。<span class="src">統宗卷之二〈以旬首取符使法〉</span></dd></dl>
+        <div class="memory-line" id="detailMemory" data-note="本頁助記">記憶：五居中央，土承萬物。</div></aside>
+      </div>
+      <div class="trio">
+        <div class="band">
+          <div class="tc">
+<h3>宫是定的，盤是動的</h3>
+          <p class="lead">格子上寫的「巽四・天輔・杜門」是原始配置，不是排出來的結果。</p>
+          <dl class="tiers">
+            <dt>定</dt>
+            <dd><b>地盤</b>　<b class="k">永遠不變。</b><br>九宫的位置、方位、五行，以及本來配哪顆星哪道門，背一次就一勞永逸。</dd>
+            <dt>動</dt>
+            <dd><b>天盤</b>　九星隨值符轉<br><b>人盤</b>　八門隨值使轉<br><b>神盤</b>　八神隨值符排</dd>
+          </dl>
+            </div>
+            <p class="note">所以第十節排出盤時，巽四宫很可能不是杜門了——變的是盤，不是宫。讀盤要兩層一起看：宫提供場地與五行，盤上的星門神提供當下的人與事。門落在生我的宫就得力，門去剋宫就是迫。</p>
+        </div>
+        <div class="band">
+          <div class="tc">
+            <h3>數字是洛書排出來的</h3>
+          <p class="lead">九宫的數字不是隨意編號，而是洛書的定位。</p>
+          <blockquote class="chant">戴九履一，左三右七<br>二四爲肩，六八爲足<br>五居中央</blockquote>
+            </div>
+            <p class="note">對照上南下北：九在上（離）、一在下（坎）、三在左（震）、七在右（兑）。<span class="src">此作統宗〈奇門妙祕賦〉；寶鑒〈奇門源流〉引唐會要作「二四爲上、六八爲下」，字異義同。</span></p>
+        </div>
+        <div class="band">
+          <div class="tc">
+            <h3>三數相加恒爲十五</h3>
+          <p class="lead">橫、豎、斜任取三格，相加都是十五。</p>
+          <table class="mini-table">
+            <thead><tr><th>方向</th><th>組合</th></tr></thead>
+            <tbody>
+              <tr><th>橫</th><td>4+9+2　3+5+7　8+1+6</td></tr>
+              <tr><th>豎</th><td>4+3+8　9+5+1　2+7+6</td></tr>
+              <tr><th>斜</th><td>4+5+6　2+5+8</td></tr>
+            </tbody>
+          </table>
+            </div>
+            <p class="note">記住 1→2→3→…→9 這條數序：起局時三奇六儀照它飛布，陽遁順、陰遁逆；值使落宫也是數這條序，不是照格子的相鄰位置繞。</p>
+        </div>
       </div>
     </section>
 
     <section class="section" id="symbols">
-      <div class="section-head"><div class="section-no">肆</div><div class="section-title"><h2>門、星、神各管一層</h2><p>先記核心方向，不要一次背完整萬物類象。八門、九星、八神圖都從左到右依固定順序排列。</p></div></div>
-      <figure class="gates-art"><img src="assets/eight-gates-mnemonic.webp" alt="八幅無文字場景，依序象徵休、生、傷、杜、景、死、驚、開八門"></figure>
-      <div class="gate-labels" aria-label="八門意象">
-        <div class="gate-label"><b>休門</b><span>休養 · 謀劃</span></div><div class="gate-label"><b>生門</b><span>生長 · 財利</span></div><div class="gate-label"><b>傷門</b><span>競爭 · 損傷</span></div><div class="gate-label"><b>杜門</b><span>封閉 · 隱藏</span></div><div class="gate-label"><b>景門</b><span>顯現 · 文書</span></div><div class="gate-label"><b>死門</b><span>停止 · 結束</span></div><div class="gate-label"><b>驚門</b><span>驚恐 · 口舌</span></div><div class="gate-label"><b>開門</b><span>開創 · 事業</span></div>
-      </div>
+      <div class="section-head"><div class="section-no">肆</div><div class="section-title"><h2>門、星、神各管一層</h2><p>先記核心方向，不要一次背完整萬物類象。八門圖與下表的文字全出《奇門遁甲統宗》卷二；九星、八神圖從左到右依固定順序排列。</p></div></div>
+      <figure class="gates-art"><img src="assets/eight-gates-mnemonic.webp" width="1600" height="980" loading="lazy" alt="八門類象圖：八格工筆場景，每格附門名與《奇門遁甲統宗》卷二各門所主條的宜忌摘錄"><figcaption class="note">文出《奇門遁甲統宗》卷之二〈休門所主〉〈生門所主〉〈傷門所主〉〈杜門所主〉〈景門所主〉〈死門所主〉〈驚門所主〉〈開門所主〉八條</figcaption></figure>
+      <table class="mini-table"><caption>八門所主（《奇門遁甲統宗》卷之二，各門分立一條）</caption>
+        <thead><tr><th>門</th><th>所主（原文）</th></tr></thead>
+        <tbody>
+            <tr><th>休門</th><td>休門宜面君謁貴、上官到任、嫁娶、移徙、商賈、營建，諸事皆吉，不宜行刑斷獄。</td></tr>
+            <tr><th>生門</th><td>生門宜徵討、謀望、入官見貴、嫁娶、移徙，諸事皆吉，不宜埋葬治喪。</td></tr>
+            <tr><th>傷門</th><td>傷門宜漁獵、討捕索債、博戲、收斂貨財，餘俱不宜。</td></tr>
+            <tr><th>杜門</th><td>杜門宜捕盜、剪凶、決隱、獄形、填塞溝壑，餘俱不宜。</td></tr>
+            <tr><th>景門</th><td>景門宜上書獻策、招賢謁貴、拜職遣使、行誅、突陣、破齒等事，餘俱不宜。</td></tr>
+            <tr><th>死門</th><td>死門宜決斷、刑獄、弔喪、埋葬等事。</td></tr>
+            <tr><th>驚門</th><td>驚門宜掩捕盜賊、恐惑亂眾等事。</td></tr>
+            <tr><th>開門</th><td>開門宜徵討、謀望、入官見貴、應舉、遠行、嫁娶、移徙、商賈、營建，不宜治政，有私人窺伺。</td></tr>
+        </tbody>
+      </table>
+      <p class="note">右八門最怕迫制，吉門有氣益吉，無氣減吉；凶門有氣益凶，無氣減凶。<br>圖上每格因寬度所限只摘前列數項並加刪節號，完整原文以本表爲準。</p>
+
       <div class="symbol-tabs" role="tablist" aria-label="符號分類"><button class="tab" role="tab" aria-selected="true" aria-controls="starsPanel" id="starsTab">九星</button><button class="tab" role="tab" aria-selected="false" aria-controls="spiritsPanel" id="spiritsTab">八神</button></div>
       <div class="panel" id="starsPanel" role="tabpanel" aria-labelledby="starsTab">
-        <figure class="gates-art"><img src="assets/nine-stars-mnemonic.webp" alt="九星意象圖，左到右為天蓬、天芮、天沖、天輔、天禽、天心、天柱、天任、天英，每格附核心象意"></figure>
+        <figure class="gates-art"><img src="assets/nine-stars-mnemonic.webp" alt="九星意象圖，左到右爲天蓬、天芮、天沖、天輔、天禽、天心、天柱、天任、天英，每格附核心象意"></figure>
       </div>
       <div class="panel" id="spiritsPanel" role="tabpanel" aria-labelledby="spiritsTab" hidden>
-        <figure class="gates-art"><img src="assets/eight-spirits-mnemonic.webp" alt="八神意象圖，左到右為值符、螣蛇、太陰、六合、白虎、玄武、九地、九天，每格附核心象意"></figure>
+        <figure class="gates-art"><img src="assets/eight-spirits-mnemonic.webp" width="1600" height="980" loading="lazy" alt="八神意象圖：4欄2列八格，依序爲值符、螣蛇、太陰、六合、白虎、玄武、九地、九天，每格畫該神所主之事，並附《奇門遁甲統宗》卷二各神條的神格與所主"><figcaption class="note">文出《奇門遁甲統宗》卷之二〈值符〉〈騰蛇〉〈太陰〉〈六合〉〈勾陳（下有白虎）〉〈朱雀（下有玄武）〉〈九地〉〈九天〉八條。畫面畫的是各神在盤上所主之事，不是名字的字面。統宗卷之二把白虎、玄武附在勾陳、朱雀條下，原文主詞是勾陳與朱雀：〈勾陳（下有白虎）〉「稟西方之金，爲剛勇之神，主兵戈戰鬥」；〈朱雀（下有玄武）〉「稟北方之水，爲刑戮□讒之神」，其事爲「口舌、啼哭、夢想、離別、驚恐、遺失、逃人」。〈九地〉則是「坤上之象，萬物之母，爲陰晦之神」，其事爲「牢獄、闇昧、哭泣、死喪」。□ 爲原頁遮字，照錄不臆補。</figcaption></figure>
       </div>
     </section>
 
     <section class="section" id="method">
       <div class="section-head"><div class="section-no">伍</div><div class="section-title"><h2>固定五步讀一盤</h2><p>每次都照同一順序，避免看到單一凶象就急著下結論。</p></div></div>
-      <div class="method"><article class="method-step"><h3>先問清楚</h3><p>一盤只處理一個具體問題，時間與情境要清楚。</p></article><article class="method-step"><h3>選取用神</h3><p>日干代表自己；工作看開門，財利看生門，合作看六合。</p></article><article class="method-step"><h3>找到落宮</h3><p>先看用神在哪一宮、宮的五行與是否空亡。</p></article><article class="method-step"><h3>讀同宮組合</h3><p>把門、星、神、天地盤干一起看，不拆成孤立吉凶。</p></article><article class="method-step"><h3>比較生剋</h3><p>比較用神宮和日干宮，最後才形成可驗證的判斷。</p></article></div>
+      <div class="method"><article class="method-step card"><h3>先問清楚</h3><p>一盤只處理一個具體問題，時間與情境要清楚。</p></article><article class="method-step card"><h3>選取用神</h3><p>日干代表自己；工作看開門，財利看生門，合作看六合。</p></article><article class="method-step card"><h3>找到落宫</h3><p>先看用神在哪一宫、宫的五行與是否空亡。</p></article><article class="method-step card"><h3>讀同宫組合</h3><p>把門、星、神、天地盤干一起看，不拆成孤立吉凶。</p></article><article class="method-step card"><h3>比較生剋</h3><p>比較用神宫和日干宫，最後才形成可驗證的判斷。</p></article></div>
     </section>
 
     <section class="section" id="yongshen">
       <div class="section-head"><div class="section-no">陸</div><div class="section-title"><h2>先取用神</h2><p>用神取錯，後面每一步都會錯得很順。這一節先把「代表這件事的是誰」定下來。</p></div></div>
       <div class="ys-lead">
         <div>
-          <p><b>用神，就是盤上代表你所問那件事的那個符號。</b>一張盤有九宮、八門、九星、八神、天地盤干，符號多到可以講出任何答案；用神的作用是先指定「這次只看它」，讓判斷有唯一的焦點。</p>
-          <p>問工作就看開門，問錢就看生門——用神一旦定了，其餘八宮都只是背景。另外有兩個固定角色：<b>日干代表求測者本人</b>，若填了出生年，<b>年命宮</b>也代表本人，可與日干宮互參。</p>
+          <p><b>用神，就是盤上代表你所問那件事的那個符號。</b>一張盤有九宫、八門、九星、八神、天地盤干，符號多到可以講出任何答案；用神的作用是先指定「這次只看它」，讓判斷有唯一的焦點。</p>
+          <p>問工作就看開門，問錢就看生門——用神一旦定了，其餘八宫都只是背景。另外有兩個固定角色：<b>日干代表求測者本人</b>，若填了出生年，<b>年命宫</b>也代表本人，可與日干宫互參。</p>
           <p>一盤只處理一個問題、只取一個主用神。同時想問工作又想問感情，請分兩盤起。</p>
         </div>
-        <div class="ys-warn"><b>為什麼它排在最前面</b>用神是唯一一個「選錯了不會報錯」的步驟。旺衰、格局、生剋都算得出漂亮結果，只是算的是別件事。所以取用神不是第二步，是全部判斷的地基。</div>
+        <div class="ys-warn"><b>爲什麼它排在最前面</b>用神是唯一一個「選錯了不會報錯」的步驟。旺衰、格局、生剋都算得出漂亮結果，只是算的是别件事。所以取用神不是第二步，是全部判斷的地基。</div>
       </div>
       <div class="ys-tablewrap">
         <table class="ys-table">
-          <thead><tr><th>所問之事</th><th>主用神</th><th>輔看</th><th>取用的理由</th></tr></thead>
+          <thead><tr><th>所問之事</th><th>主用神</th><th>輔看<sup>＊</sup></th><th>取用的理由</th><th>出處</th></tr></thead>
           <tbody>
-            <tr><th>綜合・不指定</th><td class="ys-main">值符</td><td class="ys-sub">日干宮</td><td class="ys-note">無特定事項時，以全盤主導力量通觀。</td></tr>
-            <tr><th>求財</th><td class="ys-main">生門</td><td class="ys-sub">戊</td><td class="ys-note">生門主財源與生意，戊為財之本氣。</td></tr>
-            <tr><th>事業・工作</th><td class="ys-main">開門</td><td class="ys-sub">值符</td><td class="ys-note">開門主開創與職務，值符為主導與上位者。</td></tr>
-            <tr><th>考試・文書</th><td class="ys-main">景門</td><td class="ys-sub">天輔、丁</td><td class="ys-note">景門主文書顯現，天輔為文昌，丁奇主智巧。</td></tr>
-            <tr><th>婚姻・感情</th><td class="ys-main">六合</td><td class="ys-sub">男看乙為己庚為她，女反之</td><td class="ys-note">六合主婚配與結合，乙庚關係看雙方能否成。</td></tr>
-            <tr><th>疾病</th><td class="ys-main">天芮</td><td class="ys-sub">天心為醫、死門</td><td class="ys-note">天芮為病星，天心主醫藥，死門看輕重。</td></tr>
-            <tr><th>出行</th><td class="ys-main">值使門</td><td class="ys-sub">所去方位之宮</td><td class="ys-note">值使主事情走向，再看要去的那個方位宮吉凶。</td></tr>
-            <tr><th>官司・爭訟</th><td class="ys-main">開門</td><td class="ys-sub">驚門為對方、值符為官方</td><td class="ys-note">開門為我方，驚門為對造，值符為公權力。</td></tr>
-            <tr><th>尋人尋物</th><td class="ys-main">六合</td><td class="ys-sub">落宮即方位</td><td class="ys-note">六合主隱藏與連結，其落宮方位即搜尋方向。</td></tr>
+            <tr><th>綜合・不指定</th><td class="ys-main">值符</td><td class="ys-sub">日干宫</td><td class="ys-note">無特定事項時，以全盤主導力量通觀。</td><td class="ys-note">演義〈天乙直符吉凶神說〉「直符天乙之神事急，宜從此方而出」</td></tr>
+            <tr><th>求財</th><td class="ys-main">生門</td><td class="ys-sub">戊</td><td class="ys-note">生門主財源與生意。</td><td class="ys-note">統宗〈論八門執事歌〉「欲求財利往生方」</td></tr>
+            <tr><th>事業・工作</th><td class="ys-main">開門</td><td class="ys-sub">值符</td><td class="ys-note">開門主開創與職務，值符爲主導與上位者。</td><td class="ys-note">統宗〈開門所主〉「開門宜徵討、謀望、入官見貴、應舉」</td></tr>
+            <tr><th>見貴・謁上</th><td class="ys-main">休門</td><td class="ys-sub">值符</td><td class="ys-note">休門主面君謁貴、上官到任。</td><td class="ys-note">統宗〈論八門執事歌〉「休門見貴最爲良」</td></tr>
+            <tr><th>考試・文書</th><td class="ys-main">景門</td><td class="ys-sub">天輔、丁</td><td class="ys-note">景門主上書獻策、拜職遣使。</td><td class="ys-note">統宗〈景門所主〉「景門宜上書獻策、招賢謁貴」</td></tr>
+            <tr><th>婚姻・感情</th><td class="ys-main">六合</td><td class="ys-sub">男看乙爲己庚爲她，女反之</td><td class="ys-note">六合旺相主婚姻和合。</td><td class="ys-note">統宗〈六合〉「旺相則爲爵祿、榮慶、婚姻、和合、胎產」</td></tr>
+            <tr><th>訴訟・追討</th><td class="ys-main">傷門</td><td class="ys-sub">驚門爲對方</td><td class="ys-note">傷門主索債討捕，驚門主掩捕盜賊。</td><td class="ys-note">統宗〈傷門所主〉「傷門宜漁獵、討捕索債」、〈驚門所主〉「驚門宜掩捕盜賊」</td></tr>
+            <tr><th>葬事・田土</th><td class="ys-main">死門</td><td class="ys-sub">坤二宫</td><td class="ys-note">死門主刑獄、弔喪、埋葬。</td><td class="ys-note">統宗〈死門所主〉「死門宜決斷、刑獄、弔喪、埋葬等事」</td></tr>
+            <tr><th>藏匿・避難</th><td class="ys-main">杜門</td><td class="ys-sub">太陰、六合</td><td class="ys-note">杜門主填塞隱匿，太陰可藏兵、六合可逃亡。</td><td class="ys-note">統宗〈論八門執事歌〉「杜門無事好逃藏」；演義「太陰之下可以伏兵，六合之下可以逃亡」</td></tr>
+            <tr><th>出行</th><td class="ys-main">值使門</td><td class="ys-sub">所去方位之宫</td><td class="ys-note">值使主事情走向，再看要去的那個方位宫吉凶。</td><td class="ys-note">煙波釣叟歌「值使順逆遁宫去」</td></tr>
+            <tr><th>疾病</th><td class="ys-main">天芮</td><td class="ys-sub">天心爲醫</td><td class="ys-note">天心「爲高道、爲名醫」有據；<b>天芮爲病星則是後世通說，本語料庫的三本典籍查無此條</b>。</td><td class="ys-note">天心：統宗〈天心〉；天芮爲病：<b>查無出處</b></td></tr>
           </tbody>
         </table>
+        <p class="note"><b>＊「輔看」整欄查無出處。</b>主用神那一欄的引文逐句都在典籍裡（見出處欄），但「求財輔看戊」「婚姻男看乙爲己庚爲她」「訴訟以驚門爲對方」「葬事輔看坤二宫」「出行以值使門爲主用神」這幾條對應關係，本站四本典籍皆查無，是後世取用習慣。<br>本表是「所問之事 → 取哪個符號」的對照，取用理由一律回到典籍原文；查不到出處的已在表上標明。
+        原表另有「尋人尋物取六合」「官司取開門爲我、驚門爲他」兩列，三本典籍查無此說，已移除。</p>
       </div>
       <div class="ys-after">
-        <article class="ys-item"><h3>看落宮旺衰</h3><p>用神五行對照月令：同我為旺、生我為相、我生為休、我剋為囚、剋我為死。旺相才有力量成事。</p></article>
-        <article class="ys-item"><h3>看空不空</h3><p>用神落旬空宮，事情有形無實、名實不符，多半難成，要等出空再論。</p></article>
-        <article class="ys-item"><h3>看同宮組合</h3><p>把該宮的門、星、神與天地盤干一起讀，吉多吉少先有個底，不拆成孤立吉凶。</p></article>
-        <article class="ys-item"><h3>比對日干宮</h3><p>用神宮生日干宮，事來就我；日干宮生用神宮，我得出力；相剋則看誰剋誰，決定主動權在哪一方。</p></article>
+        <article class="ys-item card"><h3>看落宫旺衰</h3><p>用神五行對照月令：我生爲旺、我同爲相、我剋爲休、剋我爲囚、生我爲廢。旺相才有力量成事。</p></article>
+        <article class="ys-item card"><h3>看空不空</h3><p>用神落旬空宫，事情有形無實、名實不符，多半難成，要等出空再論。</p></article>
+        <article class="ys-item card"><h3>看同宫組合</h3><p>把該宫的門、星、神與天地盤干一起讀，吉多吉少先有個底，不拆成孤立吉凶。</p></article>
+        <article class="ys-item card"><h3>比對日干宫</h3><p>用神宫生日干宫，事來就我；日干宫生用神宫，我得出力；相剋則看誰剋誰，決定主動權在哪一方。</p></article>
       </div>
       <p class="note">下一節的排盤器用的就是這張表：你在「所問之事」選什麼，斷局第一步就取哪個用神，兩邊是同一份資料。</p>
     </section>
@@ -131,10 +232,10 @@
     <section class="section" id="qiju">
       <div class="section-head"><div class="section-no">柒</div><div class="section-title"><h2>起局是怎麼來的</h2><p>「陰遁六局」不是抽出來的。四個步驟走完，同一個時辰只會得到同一張盤。</p></div></div>
       <div class="method four">
-        <article class="method-step"><h3>定陰陽遁</h3><p>冬至到芒種用陽遁，順數；夏至到大雪用陰遁，逆數。分界看節氣，不看月份。</p></article>
-        <article class="method-step"><h3>定三元</h3><p>甲、己日為符頭，每五日一元，依上、中、下循環。從最近的符頭往回數五天內即屬該元。</p></article>
-        <article class="method-step"><h3>查局數</h3><p>拿節氣與三元去查十八局表，得到一個 1–9 的數字，這就是「幾局」。</p></article>
-        <article class="method-step"><h3>布地盤</h3><p>從該數字的宮位起戊，六儀三奇依序排：陽遁順飛、陰遁逆飛。地盤成形，一局即定。</p></article>
+        <article class="method-step card"><h3>定陰陽遁</h3><p>冬至到芒種用陽遁，順數；夏至到大雪用陰遁，逆數。分界看節氣，不看月份。</p></article>
+        <article class="method-step card"><h3>定三元</h3><p>甲、己日爲符頭，每五日一元，依上、中、下循環。從最近的符頭往回數五天內即屬該元。</p></article>
+        <article class="method-step card"><h3>查局數</h3><p>拿節氣與三元去查十八局表，得到一個 1–9 的數字，這就是「幾局」。</p></article>
+        <article class="method-step card"><h3>布地盤</h3><p>從該數字的宫位起戊，六儀三奇依序排：陽遁順飛、陰遁逆飛。地盤成形，一局即定。</p></article>
       </div>
 
       <div class="jq-tables">
@@ -162,8 +263,9 @@
         </table>
       </div>
 
-      <div class="solo">
+      <div class="solo band">
         <h3>三元符頭：甲己日起算，五日一元</h3>
+        <p class="lead">同一個節氣裡分上、中、下三元，局數就從這裡分出來。</p>
         <p>六十甲子裡的甲日與己日共十二天，就是符頭。從甲子開始，上、中、下三元依序輪轉，每個符頭管五天。</p>
         <div class="yuan-row">
           <div class="yuan-cell"><b>上元</b><span>甲子・己卯・甲午・己酉</span><small>六十甲子序 0・15・30・45</small></div>
@@ -173,19 +275,20 @@
         <p class="note">許多流傳的表把己丑己未列中元、己巳己亥列下元，那會讓三元循環斷掉。照上、中、下依序輪轉去記，就不會錯。</p>
       </div>
 
-      <div class="solo">
+      <div class="solo band">
         <h3>布地盤：六儀三奇的順逆</h3>
+        <p class="lead">九個符號照固定順序填進九宫，地盤一排好，整局就定了。</p>
         <div class="dp-panel">
           <div>
             <p>排列順序固定是<b>戊、己、庚、辛、壬、癸、丁、丙、乙</b>——前六個是六儀（甲遁其中），後三個是三奇。</p>
-            <p>從局數指定的那一宮起戊，陽遁按洛書順飛（一→二→三…→九→一），陰遁逆飛（九→八→七…→一→九），九個符號填滿九宮，地盤就定了。地盤一旦排好整局不動，天盤、人盤、神盤都疊在它上面轉。</p>
+            <p>從局數指定的那一宫起戊，陽遁按洛書順飛（一→二→三…→九→一），陰遁逆飛（九→八→七…→一→九），九個符號填滿九宫，地盤就定了。地盤一旦排好整局不動，天盤、人盤、神盤都疊在它上面轉。</p>
             <div class="dp-form">
               <div class="pp-field"><label for="dpYinyang">陰陽遁</label><select id="dpYinyang"><option>陽遁</option><option selected>陰遁</option></select></div>
               <div class="pp-field"><label for="dpJu">局數</label><select id="dpJu"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option selected>6</option><option>7</option><option>8</option><option>9</option></select></div>
             </div>
           </div>
           <div>
-            <div class="dp-grid" id="dpGrid" aria-label="地盤九宮"></div>
+            <div class="dp-grid" id="dpGrid" aria-label="地盤九宫"></div>
             <p class="dp-caption" id="dpCaption"></p>
           </div>
         </div>
@@ -196,17 +299,17 @@
       <div class="section-head"><div class="section-no">捌</div><div class="section-title"><h2>甲不現，值符值使</h2><p>盤上找不到甲，卻處處是甲。這一節解釋「甲申旬・遁庚」和盤面那兩個紅標籤。</p></div></div>
       <div class="lead-2">
         <div>
-          <p><b>十天干排進盤裡，只有九個位置，甲被藏起來了。</b>甲為尊、為元帥，不直接臨陣，而是躲在六儀之中，由六儀代它出面——這就是「遁甲」兩個字的由來。</p>
-          <p>六十甲子分成六旬，每旬的第一個時辰叫旬首，都是甲開頭。旬首是哪個甲，甲就遁在對應的那個儀裡。盤面寫「甲申旬・遁庚」，意思是這個時辰屬甲申旬，要找甲，就去看庚在哪一宮。</p>
-          <p>同一張表還決定<b>旬空</b>：一旬十個時辰配十二地支，配不到的兩個就是空亡，對應的宮位在盤上打斜線。</p>
+          <p><b>十天干排進盤裡，只有九個位置，甲被藏起來了。</b>甲爲尊、爲元帥，不直接臨陣，而是躲在六儀之中，由六儀代它出面——這就是「遁甲」兩個字的由來。</p>
+          <p>六十甲子分成六旬，每旬的第一個時辰叫旬首，都是甲開頭。旬首是哪個甲，甲就遁在對應的那個儀裡。盤面寫「甲申旬・遁庚」，意思是這個時辰屬甲申旬，要找甲，就去看庚在哪一宫。</p>
+          <p>同一張表還決定<b>旬空</b>：一旬十個時辰配十二地支，配不到的兩個就是空亡，對應的宫位在盤上打斜線。</p>
         </div>
-        <div class="callout"><b>為什麼要懂這個</b>斷局時若用神是甲（例如日干為甲），盤上根本找不到它，必須改看該旬的隱儀落宮。不知道這條規則，會以為盤排錯了。</div>
+        <div class="callout"><b>爲什麼要懂這個</b>斷局時若用神是甲（例如日干爲甲），盤上根本找不到它，必須改看該旬的隱儀落宫。不知道這條規則，會以爲盤排錯了。</div>
       </div>
       <table class="mini-table" style="margin-top:8px"><caption>六甲隱儀表</caption>
-        <thead><tr><th>旬首</th><th>甲遁於</th><th>旬內時辰</th><th>旬空</th><th>空亡宮位</th></tr></thead>
+        <thead><tr><th>旬首</th><th>甲遁於</th><th>旬內時辰</th><th>旬空</th><th>空亡宫位</th></tr></thead>
         <tbody>
           <tr><th>甲子</th><td>戊</td><td>甲子至癸酉</td><td>戌、亥</td><td>乾六</td></tr>
-          <tr><th>甲戌</th><td>己</td><td>甲戌至癸未</td><td>申、酉</td><td>坤二、兌七</td></tr>
+          <tr><th>甲戌</th><td>己</td><td>甲戌至癸未</td><td>申、酉</td><td>坤二、兑七</td></tr>
           <tr><th>甲申</th><td>庚</td><td>甲申至癸巳</td><td>午、未</td><td>離九、坤二</td></tr>
           <tr><th>甲午</th><td>辛</td><td>甲午至癸卯</td><td>辰、巳</td><td>巽四</td></tr>
           <tr><th>甲辰</th><td>壬</td><td>甲辰至癸丑</td><td>寅、卯</td><td>艮八、震三</td></tr>
@@ -215,24 +318,27 @@
       </table>
 
       <div class="duo">
-        <div>
+        <div class="band">
           <h3>值符：這一局的主角星</h3>
-          <p>旬首的隱儀落在地盤哪一宮，那一宮的原始九星就是值符。值符代表全局的主導力量、權威與貴人。</p>
-          <p>排天盤時，值符星會從原宮轉到「時干所在的那一宮」，其餘八星整圈跟著轉——這就是轉盤奇門的轉法。盤面上標「值符」的那格，就是它轉到的位置。</p>
+          <p class="lead">值符是全局的主導力量，天盤怎麼轉由它決定。</p>
+          <p>旬首的隱儀落在地盤哪一宫，那一宫的原始九星就是值符。值符代表全局的主導力量、權威與貴人。</p>
+          <p>排天盤時，值符星會從原宫轉到「時干所在的那一宫」，其餘八星整圈跟著轉——這就是轉盤奇門的轉法。盤面上標「值符」的那格，就是它轉到的位置。</p>
         </div>
-        <div>
+        <div class="band">
           <h3>值使：這件事的走向門</h3>
-          <p>值符原宮的那個八門就是值使。值使代表事情的發展趨勢與行動路徑。</p>
-          <p>它從原宮起算，依旬首到當前時辰的時辰數移動，陽遁順行、陰遁逆行，八門整圈跟著轉。問出行、問事情走到哪一步，先看值使。</p>
+          <p class="lead">值使是事情的走向，人盤怎麼轉由它決定。</p>
+          <p>值符原宫的那個八門就是值使。值使代表事情的發展趨勢與行動路徑。</p>
+          <p>它從原宫起算，依旬首到當前時辰的時辰數移動，陽遁順行、陰遁逆行，八門整圈跟著轉。問出行、問事情走到哪一步，先看值使。</p>
         </div>
       </div>
-      <div class="solo">
-        <h3>四層盤，疊在同一個九宮上</h3>
+      <div class="solo band">
+        <h3>四層盤，疊在同一個九宫上</h3>
+        <p class="lead">同一格裡有四個符號，分别來自四層盤，各回答不同的問題。</p>
         <div class="path">
-          <article class="path-item"><div class="path-tag">第一層・不動</div><strong>地盤</strong><p>六儀三奇依局數排定，整局不動，是所有判斷的底。</p></article>
-          <article class="path-item"><div class="path-tag">第二層・隨時干</div><strong>天盤</strong><p>九星與天盤干，隨值符轉到時干宮，看環境與外在條件。</p></article>
-          <article class="path-item"><div class="path-tag">第三層・隨時辰</div><strong>人盤</strong><p>八門，隨值使依時辰數移動，看行動與做法。</p></article>
-          <article class="path-item"><div class="path-tag">第四層・隨值符</div><strong>神盤</strong><p>八神，自值符落宮起排，陽順陰逆，看隱微與人心。</p></article>
+          <article class="path-item card"><div class="path-tag">第一層・不動</div><strong>地盤</strong><p>六儀三奇依局數排定，整局不動，是所有判斷的底。</p></article>
+          <article class="path-item card"><div class="path-tag">第二層・隨時干</div><strong>天盤</strong><p>九星與天盤干，隨值符轉到時干宫，看環境與外在條件。</p></article>
+          <article class="path-item card"><div class="path-tag">第三層・隨時辰</div><strong>人盤</strong><p>八門，隨值使依時辰數移動，看行動與做法。</p></article>
+          <article class="path-item card"><div class="path-tag">第四層・隨值符</div><strong>神盤</strong><p>八神，自值符落宫起排，陽順陰逆，看隱微與人心。</p></article>
         </div>
       </div>
     </section>
@@ -241,61 +347,73 @@
       <div class="section-head"><div class="section-no">玖</div><div class="section-title"><h2>旺衰與格局</h2><p>同一個開門，在春天和在秋天不是一回事。這一節講力量大小，和幾種必須先認出來的狀態。</p></div></div>
       <div class="lead-2">
         <div>
-          <p><b>旺相休囚死，是拿用神的五行去比當月的五行。</b>月令當旺的那個五行最有力，其餘依生剋關係依序遞減。同一個吉門，旺相才推得動事情；囚死就只是名義上的吉。</p>
+          <p><b>旺相休囚廢，是拿用神的五行去比當月的五行。</b>「我生之月爲旺」——星門把氣吐給月令，正當用事之時，力量最足；其餘依生剋關係遞減。同一個吉門，旺相才推得動事情；囚廢就只是名義上的吉。</p>
           <p>月令看月支：寅卯屬木（春）、巳午屬火（夏）、申酉屬金（秋）、亥子屬水（冬）、辰未戌丑屬土（四季月）。</p>
         </div>
         <div class="callout"><b>先判狀態，再談吉凶</b>空亡、入墓、伏吟、反吟、門迫這五種狀態會直接改寫結論。吉格逢空亡等於沒有，凶格入墓反而暫時困住。所以順序是：先看狀態，再讀格局。</div>
       </div>
-      <table class="mini-table" style="margin-top:10px"><caption>旺相休囚死</caption>
+      <table class="mini-table" style="margin-top:10px"><caption>旺相休囚廢</caption>
         <thead><tr><th>狀態</th><th>與月令的關係</th><th>力量</th><th>斷法</th></tr></thead>
         <tbody>
-          <tr><th>旺</th><td>與月令同五行</td><td>最強</td><td>當令得時，可放手去做。</td></tr>
-          <tr><th>相</th><td>月令所生</td><td>次強</td><td>得力有助，順勢推進。</td></tr>
-          <tr><th>休</th><td>生月令者</td><td>平</td><td>付出多、收成慢，宜守成。</td></tr>
-          <tr><th>囚</th><td>剋月令者</td><td>弱</td><td>力有未逮，勉強行事易受挫。</td></tr>
-          <tr><th>死</th><td>被月令所剋</td><td>最弱</td><td>無力成事，另擇時或改用他法。</td></tr>
+          <tr><th>旺</th><td>我生之月</td><td>最強</td><td>當令得時，可放手去做。</td></tr>
+          <tr><th>相</th><td>我同之月</td><td>次強</td><td>得力有助，順勢推進。</td></tr>
+          <tr><th>休</th><td>我剋之月</td><td>平</td><td>付出多、收成慢，宜守成。</td></tr>
+          <tr><th>囚</th><td>剋我之月</td><td>弱</td><td>力有未逮，勉強行事易受挫。</td></tr>
+          <tr><th>廢</th><td>生我之月</td><td>最弱</td><td>無力成事，另擇時或改用他法。</td></tr>
         </tbody>
       </table>
+      <p class="note">依《御定奇門遁甲寶鑒》卷一〈釋氣應〉：「皆以我生之月爲旺，我同之月爲相，我克之月爲休，克我之月爲囚，生我之月爲廢。」原書舉例：水星旺於寅卯月、相於亥子月、休於四五月、囚於辰戌丑未月、廢於申酉月。<b>語料庫內部就有異說</b>：《遁甲演義》卷三〈五行旺相休囚〉與同卷〈九星所屬〉引《三元經》作「九星各旺於同類月，相於我生月，休於生我月，囚於官鬼月，死於妻財月」——同我爲旺、我生爲相，第五位叫「死」不叫「廢」。《統宗》卷之一〈九星旺相〉又是半合。所以這不是坊間說法對上典籍，是典籍之間本來就不一致。本頁採御定本，排盤器的分數也建立在這一套上。</p>
 
       <div class="state-grid">
-        <div class="state-cell"><em>落空</em><b>空亡</b><p>用神落旬空宮。有形無實、名實不符，多半難成，待出空再論。凶事逢空反而減力。</p></div>
-        <div class="state-cell"><em>被困</em><b>入墓</b><p>木墓坤二、火土墓乾六、金墓艮八、水墓巽四。用神入墓如被鎖住，有力使不出。</p></div>
-        <div class="state-cell"><em>不動</em><b>伏吟</b><p>天地盤同干，或星、門回到原宮。事情原地打轉，宜靜不宜動。</p></div>
-        <div class="state-cell"><em>反覆</em><b>反吟</b><p>星或門來自對沖宮（坎離、震兌、巽乾、坤艮）。事情來回變動，決定了又推翻。</p></div>
-        <div class="state-cell"><em>受壓</em><b>門迫</b><p>宮剋門。行動被所在環境壓制，事倍功半。反過來門剋宮叫門制，仍可用但費力。</p></div>
+        <div class="state-cell card"><em>落空</em><b>空亡</b><p>用神落旬空宫。有形無實、名實不符，多半難成，待出空再論。凶事逢空反而減力。<span class="src"><b>查無出處</b>。本站四本典籍只有孤虛之說（寶鑒〈釋戰關背向〉「甲子旬：戌亥孤、辰巳虛」、統宗〈孤虛〉），旬空地支與之相同，但「有形無實」這套斷法與「旬空落某宫」的對照，語料庫皆查無。此為後世通說。</span></p></div>
+        <div class="state-cell card"><em>被困</em><b>三奇入墓</b><p>乙奇臨坤二、丙丁奇臨乾六。二宫藏未、木墓於未，六宫藏戌、火墓於戌。墓則氣絕，動即有凶。<span class="src">寶鑒〈釋奇墓奇制與日時幹墓同兇〉。<b>異文</b>：統宗〈奇門四十格〉作「乙奇坤宮　丙奇乾宮　丁奇<b>艮宮</b>」，丁奇落八宫不落六宫。本頁從寶鑒。</span></p></div>
+        <div class="state-cell card"><em>不動</em><b>伏吟</b><p>星、門回到本位。事情原地打轉，宜靜不宜動。<span class="src">寶鑒〈釋反吟伏吟〉「凡星門各加臨於本位，即為伏吟」；統宗〈奇門四十格〉「伏吟　本星加本宮」。排盤器另把「天地盤同干」也算伏吟，<b>那一半查無出處</b>，典籍只講星門。</span></p></div>
+        <div class="state-cell card"><em>反覆</em><b>反吟</b><p>星或門來自對沖宫（坎離、震兑、巽乾、坤艮）。事情來回變動，決定了又推翻。</p></div>
+        <div class="state-cell card"><em>受壓</em><b>迫</b><p>門剋宫。吉門被迫則吉事不成，凶門被迫則凶災愈甚。反過來宫剋門不算迫。<span class="src">寶鑒〈釋迫〉「迫者；門制其宮也」；煙波釣叟歌「宮制其門不爲迫，門制其宮是迫雄」</span></p></div>
       </div>
 
       <div class="ge-cols">
-        <table class="mini-table ge-good"><caption>常見吉格</caption>
-          <thead><tr><th>格局</th><th>組合</th><th>含義</th></tr></thead>
+        <table class="mini-table ge-good"><caption>吉格</caption>
+          <thead><tr><th>格局</th><th>組合</th><th>含義</th><th>出處</th></tr></thead>
           <tbody>
-            <tr><th>天遁</th><td>丙加壬・生門</td><td>上好格局，宜隱而後動</td></tr>
-            <tr><th>地遁</th><td>乙加己・開門</td><td>上好格局，宜託人代辦</td></tr>
-            <tr><th>人遁</th><td>丁加癸・休門</td><td>上好格局，宜走人脈</td></tr>
-            <tr><th>飛鳥跌穴</th><td>丙加戊</td><td>百事可為，主動出擊</td></tr>
-            <tr><th>青龍返首</th><td>戊加丙</td><td>謀事可成，得上位回應</td></tr>
-            <tr><th>青龍轉光</th><td>丁加戊</td><td>由暗轉明，事有轉機</td></tr>
-            <tr><th>日奇臨門</th><td>乙臨開休生</td><td>貴人助力</td></tr>
-            <tr><th>月奇臨門</th><td>丙臨開休生</td><td>威權顯赫</td></tr>
-            <tr><th>星奇臨門</th><td>丁臨開休生</td><td>文書吉利</td></tr>
+            <tr><th>青龍返首</th><td>甲加丙</td><td>利見大人，百事皆吉</td><td>陰符經</td></tr>
+            <tr><th>飛鳥跌穴</th><td>丙加甲</td><td>顯灼易成</td><td>陰符經「丙加甲兮鳥跌穴」；統宗〈奇門祕訣總賦〉「跌穴則顯灼易成」</td></tr>
+            <tr><th>天遁</th><td>生門・丙・戊</td><td>宜用兵</td><td>陰符經「生丙合戊爲天遁」；統宗〈奇門祕訣總賦〉「生丙臨戊天遁用兵」。統宗四十格另有一式「生門與丙奇臨，<b>又開門與六丙合</b>」</td></tr>
+            <tr><th>地遁</th><td>開門・乙・己</td><td>宜安墳</td><td>陰符經「地遁乙合開加己」；統宗〈奇門祕訣總賦〉「開乙臨己地遁安墳」</td></tr>
+            <tr><th>人遁</th><td>休門・丁・太陰</td><td>宜安營</td><td>陰符經「休承丁合太陰人」；統宗〈奇門祕訣總賦〉「休丁遇太陰人遁安營」</td></tr>
+            <tr><th>吉門合三奇</th><td>開休生臨乙丙丁</td><td>利爲百事。<b>這還不是「得使」</b></td><td>寶鑒〈釋三奇得使〉</td></tr>
+            <tr><th>三奇得使</th><td>上式，且值使本身是吉門</td><td>謀爲尤利</td><td>寶鑒同篇「更得吉門作直使爲得使」；統宗四十格另作「乙奇加甲午甲戌／丙奇加甲子甲申／丁奇加甲寅甲辰」，與此不同</td></tr>
+            <tr><th>陰陽化氣</th><td>丁加甲</td><td>二吉之一，不合奇門亦吉</td><td>寶鑒〈釋二吉四凶〉</td></tr>
+            <tr><th>龍鳳呈祥</th><td>丁加乙</td><td>二吉之一，謀爲俱吉</td><td>寶鑒〈釋二吉四凶〉</td></tr>
           </tbody>
         </table>
-        <table class="mini-table ge-bad"><caption>常見凶格</caption>
-          <thead><tr><th>格局</th><th>組合</th><th>含義</th></tr></thead>
+        <table class="mini-table ge-bad"><caption>凶格</caption>
+          <thead><tr><th>格局</th><th>組合</th><th>含義</th><th>出處</th></tr></thead>
           <tbody>
-            <tr><th>大格</th><td>庚加癸</td><td>大凶，事多阻絕</td></tr>
-            <tr><th>上格</th><td>庚加壬</td><td>往返皆滯，拖而不決</td></tr>
-            <tr><th>小格</th><td>庚加己</td><td>中途受阻，宜守</td></tr>
-            <tr><th>刑格</th><td>庚加庚</td><td>白虎猖狂，爭鬥損傷</td></tr>
-            <tr><th>熒入白</th><td>丙加庚</td><td>破財傷身，忌強出頭</td></tr>
-            <tr><th>悖格</th><td>辛加壬・壬加辛</td><td>是非顛倒，忌訴訟</td></tr>
-            <tr><th>亭亭之格</th><td>丁加庚</td><td>因女子或口舌致災</td></tr>
-            <tr><th>朱雀入獄</th><td>丁加辛</td><td>文書契約不利</td></tr>
-            <tr><th>青龍逃走</th><td>乙加辛</td><td>下屬拐帶、財物走失</td></tr>
+            <tr><th>大格</th><td>庚加癸</td><td>路途阻絕，忌遠行簽約</td><td>陰符經／統宗</td></tr>
+            <tr><th>小格</th><td>庚加壬</td><td>往返皆滯，拖而不決</td><td>陰符經／統宗</td></tr>
+            <tr><th>刑格（上格）</th><td>庚加己</td><td>道路刑傷，百事不宜</td><td>陰符經／統宗</td></tr>
+            <tr><th>伏干格</th><td>庚加日干</td><td>事壓己身</td><td>陰符經／統宗</td></tr>
+            <tr><th>飛干格</th><td>日干加庚</td><td>自投於阻</td><td>陰符經／統宗</td></tr>
+            <tr><th>伏宫格</th><td>庚臨值符</td><td>主事者受困</td><td>陰符經／統宗</td></tr>
+            <tr><th>飛宫格</th><td>值符加庚</td><td>上下失序</td><td>陰符經／統宗</td></tr>
+            <tr><th>太白入熒</th><td>庚加丙</td><td>賊欲來，外患突至</td><td>陰符經／統宗</td></tr>
+            <tr><th>火入金鄉</th><td>丙加庚</td><td>賊將去，耗財傷身</td><td>陰符經／統宗</td></tr>
+            <tr><th>青龍逃走</th><td>乙加辛</td><td>下屬拐帶、財物走失</td><td>陰符經／統宗</td></tr>
+            <tr><th>白虎猖狂</th><td>辛加乙</td><td>遠行有險，家宅不寧</td><td>陰符經／統宗</td></tr>
+            <tr><th>朱雀投江</th><td>丁加癸</td><td>音訊不通，文書沉沒</td><td>陰符經／統宗</td></tr>
+            <tr><th>螣蛇妖矯</th><td>癸加丁</td><td>纏繞驚疑</td><td>統宗四十格「蛇妖矯」；陰符經作「癸加丁兮蛇躍蹺」</td></tr>
+            <tr><th>朱雀入獄</th><td>丁加辛</td><td>官人刑囚，契約不利</td><td>寶鑒混合百神</td></tr>
+            <tr><th>天網四張</th><td>癸臨時干</td><td>無路可走，宜靜守</td><td>陰符經／統宗</td></tr>
+            <tr><th>地羅遮蔽</th><td>壬臨時干</td><td>前路遮擋</td><td>統宗四十格</td></tr>
+            <tr><th>二龍戰野</th><td>甲加乙</td><td>同類相爭，百事不利</td><td>寶鑒〈釋二吉四凶〉</td></tr>
+            <tr><th>二虎爭雄</th><td>庚加辛</td><td>兩強相持</td><td>寶鑒〈釋二吉四凶〉</td></tr>
+            <tr><th>青龍困頓</th><td>甲加戊</td><td>動彈不得</td><td>寶鑒〈釋二吉四凶〉</td></tr>
+            <tr><th>白虎迍邅</th><td>庚加壬</td><td>行止皆滯（與小格同組合，兩說並存）</td><td>寶鑒〈釋二吉四凶〉</td></tr>
           </tbody>
         </table>
       </div>
-      <p class="note">這兩張表就是排盤器「三・干支格局」那一步查的資料；表上有的，斷局會認出來並寫進評語。</p>
+      <p class="note">這兩張表就是排盤器「三・干支格局」那一步查的資料；表上有的，斷局會認出來並寫進評語，並附出處。<br>「甲」不會出現在盤上，它遁在旬首之儀下——甲子旬見戊、甲戌旬見己，餘類推，所以「甲加丙」在甲子旬就是盤面上的戊加丙。<br>統宗〈奇門四十格〉另有歲格、月格、日格、時格、六儀擊刑、三奇入墓、五不遇、玉女守門、雲風龍虎神鬼六遁等，需配年月日或八神方位判斷，本表未列。</p>
     </section>
 
     <section class="section" id="paipan">
@@ -312,7 +430,7 @@
           </div>
           <div class="pp-field"><label for="ppMatter">所問之事</label>
             <select id="ppMatter">
-              <option>綜合</option><option>求財</option><option>事業</option><option>考試</option><option>婚姻</option><option>疾病</option><option>出行</option><option>官司</option><option>尋人</option>
+              <option>綜合</option><option>求財</option><option>事業</option><option>見貴</option><option>考試</option><option>婚姻</option><option>訴訟</option><option>葬事</option><option>藏匿</option><option>出行</option><option>疾病</option>
             </select>
           </div>
           <div class="pp-field"><label for="ppBirth">出生年（選填）</label><input type="number" id="ppBirth" min="1900" max="2100" step="1" placeholder="如 1975"></div>
@@ -326,12 +444,12 @@
     <section class="section" id="practice">
       <div class="section-head"><div class="section-no">拾壹</div><div class="section-title"><h2>用回想代替重讀</h2><p>勾選完成項目會保存在這台裝置。右邊翻卡會隨機抽題。</p></div></div>
       <div class="practice">
-        <div><h3>第一輪進度</h3><div class="progress-track" aria-hidden="true"><div class="progress-fill" id="progressFill"></div></div><p id="progressText" aria-live="polite">完成 0／6</p><div class="checklist">
-          <label class="check-row"><input type="checkbox" data-progress="elements"><span><b>五行生剋</b><br><small>不用看表說出相生與相剋。</small></span></label><label class="check-row"><input type="checkbox" data-progress="stems"><span><b>十天干五行</b><br><small>看到天干立即說出五行。</small></span></label><label class="check-row"><input type="checkbox" data-progress="palaces"><span><b>九宮位置</b><br><small>能默畫上南下北九宮圖。</small></span></label><label class="check-row"><input type="checkbox" data-progress="gates"><span><b>八門核心象意</b><br><small>每門先掌握兩個關鍵詞。</small></span></label><label class="check-row"><input type="checkbox" data-progress="stars"><span><b>九星與八神</b><br><small>先辨角色，不急著細斷。</small></span></label><label class="check-row"><input type="checkbox" data-progress="method"><span><b>五步讀盤</b><br><small>能按順序分析一張盤。</small></span></label>
+        <div class="band"><h3>第一輪進度</h3><p class="lead">勾選完成的項目，進度會存在這台裝置。</p><div class="progress-track" aria-hidden="true"><div class="progress-fill" id="progressFill"></div></div><p id="progressText" aria-live="polite">完成 0／6</p><div class="checklist">
+          <label class="check-row"><input type="checkbox" data-progress="elements"><span><b>五行生剋</b><br><small>不用看表說出相生與相剋。</small></span></label><label class="check-row"><input type="checkbox" data-progress="stems"><span><b>十天干五行</b><br><small>看到天干立即說出五行。</small></span></label><label class="check-row"><input type="checkbox" data-progress="palaces"><span><b>九宫位置</b><br><small>能默畫上南下北九宫圖。</small></span></label><label class="check-row"><input type="checkbox" data-progress="gates"><span><b>八門核心象意</b><br><small>每門先掌握兩個關鍵詞。</small></span></label><label class="check-row"><input type="checkbox" data-progress="stars"><span><b>九星與八神</b><br><small>先辨角色，不急著細斷。</small></span></label><label class="check-row"><input type="checkbox" data-progress="method"><span><b>五步讀盤</b><br><small>能按順序分析一張盤。</small></span></label>
         </div></div>
-        <div class="quiz" aria-live="polite"><div class="quiz-label" id="quizCategory">九宮位置</div><div class="quiz-source" id="quizSource" hidden>本題出自上方剛排出的那一盤</div><div class="quiz-prompt" id="quizPrompt">坎一宮在哪個方向？</div><div class="quiz-answer" id="quizAnswer">先在心裡回答，再翻牌。</div><div class="quiz-actions"><button class="btn primary" id="revealBtn">顯示答案</button><button class="btn" id="nextBtn">下一題</button></div></div>
+        <div class="quiz" aria-live="polite"><div class="quiz-label" id="quizCategory">九宫位置</div><div class="quiz-source" id="quizSource" hidden>本題出自上方剛排出的那一盤</div><div class="quiz-prompt" id="quizPrompt">坎一宫在哪個方向？</div><div class="quiz-answer" id="quizAnswer">先在心裡回答，再翻牌。</div><div class="quiz-actions"><button class="btn primary" id="revealBtn">顯示答案</button><button class="btn" id="nextBtn">下一題</button></div></div>
       </div>
-      <div class="note"><p>學習範圍：時家轉盤奇門、拆補法。不同派別在起局、換日、寄宮等細節可能不同，初學階段不要混用。</p><div class="sources"><a href="https://www.hko.gov.hk/tc/gts/time/stemsandbranches.htm">天干地支：香港天文台</a><a href="https://www.hko.gov.hk/tc/gts/time/24solarterms.htm">二十四節氣：香港天文台</a><a href="../qimen-learning/">本頁離線可用</a></div></div>
+      <div class="note"><p>學習範圍：時家轉盤奇門、拆補法。不同派别在起局、換日、寄宫等細節可能不同，初學階段不要混用。</p><div class="sources"><a href="https://www.hko.gov.hk/tc/gts/time/stemsandbranches.htm">天干地支：香港天文台</a><a href="https://www.hko.gov.hk/tc/gts/time/24solarterms.htm">二十四節氣：香港天文台</a><a href="../qimen-learning/">本頁離線可用</a></div></div>
     </section>
   </main>
   <footer><span>奇門入門研習冊</span><span>傳統術數學習資料 · 重要決策仍以現實證據判斷</span></footer>
